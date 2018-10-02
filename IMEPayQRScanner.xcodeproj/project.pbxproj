@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		239229D5B96084128999FAB9 /* Pods_IMEPayQRScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */; };
+		67F67B731117904CB18B6872 /* Pods_IMEPayQRScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAA1F9FB24E123E75C91E70 /* Pods_IMEPayQRScannerTests.framework */; };
 		A969433B21636E5700CF284D /* IMEPayQRScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A969433121636E5700CF284D /* IMEPayQRScanner.framework */; };
 		A969434021636E5700CF284D /* IMEPayQRScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969433F21636E5700CF284D /* IMEPayQRScannerTests.swift */; };
 		A969434221636E5700CF284D /* IMEPayQRScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = A969433421636E5700CF284D /* IMEPayQRScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A969434C21636EA600CF284D /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969434B21636EA600CF284D /* QRCodeScannerViewController.swift */; };
+		A969434E216370FC00CF284D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969434D216370FC00CF284D /* OverlayView.swift */; };
+		A96943502163710400CF284D /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A969434F2163710400CF284D /* QRCode.storyboard */; };
+		A96943522163712B00CF284D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96943512163712B00CF284D /* BaseViewController.swift */; };
+		A96943542163719100CF284D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96943532163719100CF284D /* UIViewController+Extensions.swift */; };
+		A969438221638F1900CF284D /* IMPScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969438121638F1900CF284D /* IMPScannerCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +31,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DF306EEA4060EC1D2843ADD /* Pods-IMEPayQRScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScannerTests/Pods-IMEPayQRScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FA54A57795A46ED43330D77 /* Pods-IMEPayQRScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScannerTests/Pods-IMEPayQRScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		802F0E62D8694C5A91230788 /* Pods-IMEPayQRScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScanner/Pods-IMEPayQRScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		8DAA1F9FB24E123E75C91E70 /* Pods_IMEPayQRScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEPayQRScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A969433121636E5700CF284D /* IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A969433421636E5700CF284D /* IMEPayQRScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMEPayQRScanner.h; sourceTree = "<group>"; };
 		A969433521636E5700CF284D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A969433A21636E5700CF284D /* IMEPayQRScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMEPayQRScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A969433F21636E5700CF284D /* IMEPayQRScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEPayQRScannerTests.swift; sourceTree = "<group>"; };
 		A969434121636E5700CF284D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A969434B21636EA600CF284D /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		A969434D216370FC00CF284D /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		A969434F2163710400CF284D /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		A96943512163712B00CF284D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A96943532163719100CF284D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A969438121638F1900CF284D /* IMPScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMPScannerCoordinator.swift; sourceTree = "<group>"; };
+		BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5E76D37C0E8D58E8A7DF81 /* Pods-IMEPayQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScanner/Pods-IMEPayQRScanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239229D5B96084128999FAB9 /* Pods_IMEPayQRScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +65,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				A969433B21636E5700CF284D /* IMEPayQRScanner.framework in Frameworks */,
+				67F67B731117904CB18B6872 /* Pods_IMEPayQRScannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4EC3618347E94130503844 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				802F0E62D8694C5A91230788 /* Pods-IMEPayQRScanner.debug.xcconfig */,
+				EB5E76D37C0E8D58E8A7DF81 /* Pods-IMEPayQRScanner.release.xcconfig */,
+				4DF306EEA4060EC1D2843ADD /* Pods-IMEPayQRScannerTests.debug.xcconfig */,
+				4FA54A57795A46ED43330D77 /* Pods-IMEPayQRScannerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DB48D686FAC3B8B8A7328E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */,
+				8DAA1F9FB24E123E75C91E70 /* Pods_IMEPayQRScannerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A969432721636E5700CF284D = {
 			isa = PBXGroup;
 			children = (
 				A969433321636E5700CF284D /* IMEPayQRScanner */,
 				A969433E21636E5700CF284D /* IMEPayQRScannerTests */,
 				A969433221636E5700CF284D /* Products */,
+				4A4EC3618347E94130503844 /* Pods */,
+				6DB48D686FAC3B8B8A7328E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +115,12 @@
 		A969433321636E5700CF284D /* IMEPayQRScanner */ = {
 			isa = PBXGroup;
 			children = (
+				A969438121638F1900CF284D /* IMPScannerCoordinator.swift */,
+				A96943512163712B00CF284D /* BaseViewController.swift */,
+				A969434B21636EA600CF284D /* QRCodeScannerViewController.swift */,
+				A969434D216370FC00CF284D /* OverlayView.swift */,
+				A969434F2163710400CF284D /* QRCode.storyboard */,
+				A96943532163719100CF284D /* UIViewController+Extensions.swift */,
 				A969433421636E5700CF284D /* IMEPayQRScanner.h */,
 				A969433521636E5700CF284D /* Info.plist */,
 			);
@@ -104,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A969434521636E5700CF284D /* Build configuration list for PBXNativeTarget "IMEPayQRScanner" */;
 			buildPhases = (
+				9A2B4181C4372487649C5F5D /* [CP] Check Pods Manifest.lock */,
 				A969432C21636E5700CF284D /* Sources */,
 				A969432D21636E5700CF284D /* Frameworks */,
 				A969432E21636E5700CF284D /* Headers */,
@@ -122,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A969434821636E5700CF284D /* Build configuration list for PBXNativeTarget "IMEPayQRScannerTests" */;
 			buildPhases = (
+				0A538B92F3FCB69E893BD599 /* [CP] Check Pods Manifest.lock */,
 				A969433621636E5700CF284D /* Sources */,
 				A969433721636E5700CF284D /* Frameworks */,
 				A969433821636E5700CF284D /* Resources */,
+				A8766562F8F7891734E4BC0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +201,7 @@
 				TargetAttributes = {
 					A969433021636E5700CF284D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					A969433921636E5700CF284D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -177,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96943502163710400CF284D /* QRCode.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +244,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A538B92F3FCB69E893BD599 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMEPayQRScannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A2B4181C4372487649C5F5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMEPayQRScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8766562F8F7891734E4BC0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IMEPayQRScannerTests/Pods-IMEPayQRScannerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMEPayQRScannerTests/Pods-IMEPayQRScannerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A969432C21636E5700CF284D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A969438221638F1900CF284D /* IMPScannerCoordinator.swift in Sources */,
+				A96943542163719100CF284D /* UIViewController+Extensions.swift in Sources */,
+				A969434C21636EA600CF284D /* QRCodeScannerViewController.swift in Sources */,
+				A969434E216370FC00CF284D /* OverlayView.swift in Sources */,
+				A96943522163712B00CF284D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +455,9 @@
 		};
 		A969434621636E5700CF284D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802F0E62D8694C5A91230788 /* Pods-IMEPayQRScanner.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.imepay.IMEPayQRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +483,9 @@
 		};
 		A969434721636E5700CF284D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB5E76D37C0E8D58E8A7DF81 /* Pods-IMEPayQRScanner.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -388,7 +510,9 @@
 		};
 		A969434921636E5700CF284D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF306EEA4060EC1D2843ADD /* Pods-IMEPayQRScannerTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH2642V3WY;
 				INFOPLIST_FILE = IMEPayQRScannerTests/Info.plist;
@@ -406,7 +530,9 @@
 		};
 		A969434A21636E5700CF284D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA54A57795A46ED43330D77 /* Pods-IMEPayQRScannerTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH2642V3WY;
 				INFOPLIST_FILE = IMEPayQRScannerTests/Info.plist;

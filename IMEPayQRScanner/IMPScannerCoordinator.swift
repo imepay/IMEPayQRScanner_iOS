@@ -1,0 +1,40 @@
+//
+//  IMPScannerCoordinator.swift
+//  IMEPayQRScanner
+//
+//  Created by Manoj Karki on 10/2/18.
+//  Copyright © 2018 Manoj Karki. All rights reserved.
+//
+
+import UIKit
+
+final public class IMPScannerCoordinator {
+
+    private struct Constants {
+        static let mainStoryboardName = "QRCode"
+        static let scannerVcScannerId = "QRCodeScannerViewController"
+        static let somethingWentWrongMessage = "Something Went Wrong, Please try again later."
+    }
+
+    var onScanSuccess: (( _ qrString: String?) -> Void)?
+    var onScanFailure: (( _ errorMessage: String?) -> Void)?
+
+    private var parentVc: UIViewController?
+
+    public init(parentViewController: UIViewController?) {
+        self.parentVc = parentViewController
+    }
+
+    public func start() {
+        let bundle  = Bundle.init(for: IMPScannerCoordinator.self)
+        let storyboard = UIStoryboard.init(name: Constants.mainStoryboardName, bundle: bundle)
+        guard let scannerVc = storyboard.instantiateViewController(withIdentifier: Constants.scannerVcScannerId) as? QRCodeScannerViewController else {
+            onScanFailure?(Constants.somethingWentWrongMessage)
+            return
+        }
+
+        self.parentVc?.present(scannerVc, animated: true, completion: nil)
+    }
+}
+
+
