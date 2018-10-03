@@ -13,6 +13,7 @@ import UIKit
 protocol ScannerControllerDelegate: class {
     func scannerSucceed(qrString: String?)
     func scannerFailed(errorMessage: String?)
+    func cancelled()
 }
 
 // MARK:- SDK Coordinator
@@ -20,8 +21,7 @@ protocol ScannerControllerDelegate: class {
 final public class IMPScannerCoordinator {
 
     private struct Constants {
-        static let mainStoryboardName = "QRCode"
-        static let scannerVcScannerId = "QRCodeScannerViewController"
+        static let mainStoryboardName = "Scanner"
         static let somethingWentWrongMessage = "Something Went Wrong, Please try again later."
     }
 
@@ -35,13 +35,7 @@ final public class IMPScannerCoordinator {
     }
 
     public func start() {
-        let bundle  = Bundle.init(for: IMPScannerCoordinator.self)
-        let storyboard = UIStoryboard.init(name: Constants.mainStoryboardName, bundle: bundle)
-        guard let scannerVc = storyboard.instantiateViewController(withIdentifier: Constants.scannerVcScannerId) as? QRCodeScannerViewController else {
-            onScanFailure?(Constants.somethingWentWrongMessage)
-            return
-        }
-        
+        let scannerVc = QRCodeScannerViewController.initFromStoryboard(name: Constants.mainStoryboardName)
         scannerVc.scannerDelegate = self
         self.parentVc?.present(scannerVc, animated: true, completion: nil)
     }
@@ -60,5 +54,8 @@ extension IMPScannerCoordinator: ScannerControllerDelegate {
         onScanFailure?(errorMessage)
         self.parentVc?.presentedViewController?.dissmiss()
     }
+    
+    func cancelled() {
+        
+    }
 }
-

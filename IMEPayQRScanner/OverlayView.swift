@@ -10,9 +10,11 @@ import UIKit
 
 class OverlayView: UIView {
     
+    // MARK:- IBOutlets
+
     @IBOutlet weak var topLeftVLine     : UIView!
     @IBOutlet weak var topLeftHLine     : UIView!
-     @IBOutlet weak var transHoleView   : UIView!
+    @IBOutlet weak var transHoleView   : UIView!
     @IBOutlet weak var topRightVLine    : UIView!
     @IBOutlet weak var topRightHLine    : UIView!
     
@@ -28,15 +30,10 @@ class OverlayView: UIView {
         // Drawing code
         super.draw(rect)
         if transHoleView != nil {
-            // Ensures to use the current background color to set the filling color
-
-            //self.backgroundColor?.setFill()
-            //UIRectFill(rect)
-
             let layer = CAShapeLayer()
             let path = CGMutablePath()
-            
-            // Make hole in view's overlay
+
+            // Make square hole in view's overlay
             path.addRect(CGRect(x: transHoleView.frame.origin.x + 3.0, y: transHoleView.frame.origin.y + 3.0, width: transHoleView.bounds.width - 6.0, height: transHoleView.bounds.height - 6.0))
             path.addRect(bounds)
 
@@ -55,6 +52,8 @@ class OverlayView: UIView {
         }
         transHoleView.translatesAutoresizingMaskIntoConstraints = true
     }
+
+    // Initialization
 
     override init(frame: CGRect) {
         super.init(frame: frame)

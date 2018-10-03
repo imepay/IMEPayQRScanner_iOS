@@ -8,60 +8,16 @@
 
 import UIKit
 
+// MARK:- UIViewController Extensions
+
 extension UIViewController {
-
-    func addNavSeparator() {
-        if let _ = navigationController {
-           let separator = UIView(frame: CGRect(x: 0.0, y: 0.0, width: view.bounds.width, height: 1.0))
-           separator.backgroundColor = UIColor(red: 244.0 / 255.0, green:  244.0 / 255.0, blue:  244.0 / 255.0, alpha: 1.0)
-           view.addSubview(separator)
-           view.bringSubview(toFront: separator)
-        }
-    }
-    
-//    class func topViewController() -> UIViewController {
-//        let delegate = UIApplication.shared.delegate as! AppDelegate
-//        var rootViewController = delegate.window!.rootViewController
-//
-//        while rootViewController?.presentedViewController != nil {
-//            rootViewController = rootViewController?.presentedViewController
-//        }
-//        return rootViewController!
-//    }
-
-//    func addRightBarButton(title: String?, tintColor: UIColor = UIColor.black, sel: Selector) {
-//        let rightBarButtonItem = UIBarButtonItem(title: title, style: .plain, target: self, action: sel)
-//        rightBarButtonItem.setTitleTextAttributes([NSForegroundColorAttributeName: baseColor(), NSFontAttributeName : UIFont.systemFont(ofSize: 13, weight: UIFontWeightBold)], for: .normal)
-//        navigationItem.rightBarButtonItem = rightBarButtonItem
-//    }
-
-//    func addCancelBtn() {
-//        let cancelBtn = UIBarButtonItem(image: UIImage(named:"close_small"), style: .plain, target: self, action:#selector(self.dissmiss))
-//        navigationItem.rightBarButtonItem = cancelBtn
-//    }
-
-    func addCancelBtn(sel: Selector) {
-        let cancelBtn = UIBarButtonItem(image: UIImage(named:"close_small"), style: .plain, target: self, action:sel)
-        cancelBtn.tintColor = UIColor.black
-        navigationItem.rightBarButtonItem = cancelBtn
-    }
 
     func dissmiss() {
         self.dismiss(animated: true, completion: nil)
     }
-
-//    func addWhiteNavCancelButton() {
-//        navigationItem.leftBarButtonItem = UIBarButtonItem.init(image:#imageLiteral(resourceName: "back") , style: UIBarButtonItemStyle.plain, target: self, action: #selector(whiteNavButtonClicked))
-//    }
-
-//    @objc func whiteNavButtonClicked() {
-//        let barButtonApperance = UIBarButtonItem.appearance()
-//        barButtonApperance.tintColor = UIColor.black
-//        UINavigationBar.addShowdowLine()
-//        dissmiss()
-//    }
-
 }
+
+// MARK:- Storyboard initialization protocols
 
 protocol StoryboardInitializable {
     static var storyboardIdentifier: String { get }
@@ -72,12 +28,15 @@ extension StoryboardInitializable where Self: UIViewController {
     static var storyboardIdentifier: String {
         return String(describing: Self.self)
     }
-    
-    static func initFromStoryboard(name: String = "Main") -> Self {
-        let storyboard = UIStoryboard(name: name, bundle: Bundle.main)
+
+    static func initFromStoryboard(name: String = "Scanner") -> Self {
+        let bundle  = Bundle.init(for: IMPScannerCoordinator.self)
+        let storyboard = UIStoryboard(name: name, bundle: bundle)
         return storyboard.instantiateViewController(withIdentifier: storyboardIdentifier) as! Self
     }
 }
+
+// MARK:- Alert Handlers
 
 extension UIViewController {
     func showAlert(title: String?, message: String? = "", actionTitle: String? = "Ok") {
@@ -114,6 +73,8 @@ extension UIViewController {
     }
 
 }
+
+// UIView Extensions
 
 extension UIView {
 

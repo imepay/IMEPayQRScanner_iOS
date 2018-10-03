@@ -95,6 +95,7 @@ private extension QRCodeScannerViewController {
     }
 
     @objc func dissmissBtnClicked() {
+         scannerDelegate?.cancelled()
          self.dissmiss()
     }
 }
@@ -228,7 +229,7 @@ private extension QRCodeScannerViewController {
 //MARK:- AVCaptureMetadataOutputObjectsDelegate
 
 extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
-    
+
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
        
         if metadataObjects.isEmpty {
@@ -244,8 +245,8 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             DispatchQueue.main.async {
                 if let qrstring = metadataObj.stringValue {
                     let deString = self.decrypt(qrString: qrstring)
-
-                    guard let mode = QRData(withDecodedString: deString).qrTransactionMode, mode == QRData.QRTransactionMode.payMerchat,  deString.count > 0 else {
+                    print("decrypted QR Data \(deString)")
+                    guard let mode = IMPQRInfo(withDecodedString: deString).qrTransactionMode, mode == IMPQRInfo.QRTransactionMode.payMerchat,  !deString.isEmpty else {
                         self.showAlertWithCompletion(title: "Invalid QR Code", completion: { _ in
                             self.start()
                         })
@@ -256,30 +257,6 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             }
         }
     }
-
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
-
-            if metadataObjects == nil || metadataObjects.count == 0 {
-                return
-            }
-            let metadataObj = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
-
-            if metadataObj!.type == AVMetadataObject.ObjectType.qr {
-                self.stopSessionInMainThread()
-                DispatchQueue.main.async {
-                if let qrstring = metadataObj!.stringValue {
-                    let deString = self.decrypt(qrString: qrstring)
-                    print("decrypted QR Data \(deString)")
-//                    guard let mode = QRData(withDecodedString: deString).qrTransactionMode, deString.count > 0 else {
-//                        self.showAlertWithCompletion(title: "Invalid QR Data", completion: { _ in
-//                            self.reStart()
-//                        })
-//                        return
-//                    }
-                }
-            }
-          }
-        }
 }
 
 //MARK:- Decryption
@@ -295,5 +272,4 @@ extension QRCodeScannerViewController {
         }
         return ""
     }
-
 }
