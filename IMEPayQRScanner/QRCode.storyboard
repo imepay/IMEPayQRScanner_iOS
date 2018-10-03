@@ -6,6 +6,7 @@
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,6 +25,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiC-6H-N1g" customClass="OverlayView" customModule="IMEPayQRScanner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ww4-nz-5Y5">
+                                        <rect key="frame" x="270" y="45" width="30" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbp-yY-eKq">
+                                                <rect key="frame" x="7.5" y="7.5" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="XDc-SY-ksj"/>
+                                                    <constraint firstAttribute="width" constant="15" id="vPa-Vt-lGe"/>
+                                                </constraints>
+                                                <state key="normal" image="IC_CLOSE.png"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.90328017979452058" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="AgH-9k-FP3"/>
+                                            <constraint firstAttribute="width" secondItem="Ww4-nz-5Y5" secondAttribute="height" multiplier="1:1" id="Cth-hR-XvD"/>
+                                            <constraint firstItem="pbp-yY-eKq" firstAttribute="centerY" secondItem="Ww4-nz-5Y5" secondAttribute="centerY" id="Jfq-41-WZf"/>
+                                            <constraint firstItem="pbp-yY-eKq" firstAttribute="centerX" secondItem="Ww4-nz-5Y5" secondAttribute="centerX" id="ghB-WL-1Ws"/>
+                                        </constraints>
+                                    </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CzL-wh-d2A">
                                         <rect key="frame" x="39.5" y="162" width="240" height="240"/>
                                         <subviews>
@@ -118,6 +139,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.72926476883561642" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="CzL-wh-d2A" firstAttribute="centerX" secondItem="WiC-6H-N1g" secondAttribute="centerX" id="6hP-ev-NGL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ww4-nz-5Y5" secondAttribute="trailing" constant="20" id="8mE-gy-uPF"/>
+                                    <constraint firstItem="Ww4-nz-5Y5" firstAttribute="top" secondItem="WiC-6H-N1g" secondAttribute="top" constant="45" id="QHY-iC-lqm"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="bottomLeftHLine" destination="K4e-nQ-Sg5" id="eJq-U6-Ha8"/>
@@ -150,13 +173,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dissmissBtnView" destination="Ww4-nz-5Y5" id="XWM-RM-2sS"/>
                         <outlet property="instructionLabel" destination="cSE-Ih-Elc" id="CrS-kX-a9s"/>
                         <outlet property="overlayView" destination="WiC-6H-N1g" id="brz-0W-pgO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGK-De-lct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="60"/>
+            <point key="canvasLocation" x="888.75" y="60"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IC_CLOSE.png" width="39" height="41"/>
+    </resources>
 </document>

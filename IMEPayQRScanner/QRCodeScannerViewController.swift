@@ -20,7 +20,8 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
 
     @IBOutlet weak var overlayView: OverlayView!
     @IBOutlet weak var instructionLabel : UILabel!
-    
+    @IBOutlet weak var dissmissBtnView: UIView!
+
     private struct Constants {
         
         static let sessionQueueLabel = "IMEPAY_SESSION_QUEUE"
@@ -48,7 +49,9 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
         return [ .upce,.code39, .code39Mod43, .code128, .ean8, .ean13, .aztec, .pdf417, .qr ]
     }()
 
-    var isSendMoney = false
+    // MARK:- Controller Delegate
+    
+    var scannerDelegate: ScannerControllerDelegate?
 
     //MARK:- Vc Lifecycle
 
@@ -58,22 +61,42 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
         setupCaptureSession()
         view.bringSubview(toFront: overlayView)
         view.bringSubview(toFront: instructionLabel)
+        dissmissBtnView.rounded()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        reStart()
+        start()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        addTapGesture()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        //stop()
+        stopSessionInMainThread()
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
-        stop()
+    }
+}
+
+// MARK:- Gesture Setup
+
+private extension QRCodeScannerViewController {
+    
+    func addTapGesture() {
+        let tapGesture = UITapGestureRecognizer.init(target: self, action:#selector(self.dissmissBtnClicked))
+        dissmissBtnView.addGestureRecognizer(tapGesture)
     }
 
+    @objc func dissmissBtnClicked() {
+         self.dissmiss()
+    }
 }
 
 //MARK:-  Authorizartion and session setup
@@ -110,7 +133,7 @@ private extension QRCodeScannerViewController {
             let cancelButton = UIAlertAction(title: Constants.authAlertCancelActionTitle, style: UIAlertActionStyle.cancel) { (alert)  in
             }
             alert.addAction(cancelButton)
-            //UIViewController.topViewController().present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
             break
         case .authorized:
             break
@@ -125,8 +148,7 @@ private extension QRCodeScannerViewController {
         sessionQueue.async {
             let captureDevice =  AVCaptureDevice.default(for: AVMediaType.video)
             var input: AVCaptureDeviceInput?
-            
-            
+
             guard let capDevice = captureDevice else {  return }
 
             do {
@@ -153,7 +175,6 @@ private extension QRCodeScannerViewController {
                 var  frameOfInterest = CGRect.zero
 
                 DispatchQueue.main.sync {
-                    //frameOfInterest = (self.videoPreviewLayer?.metadataOutputRectOfInterest(for: self.overlayView.transHoleView.frame))!
                     frameOfInterest = (self.videoPreviewLayer?.metadataOutputRectConverted(fromLayerRect: self.overlayView.transHoleView.frame))!
                 }
                 output?.rectOfInterest = frameOfInterest
@@ -166,12 +187,11 @@ private extension QRCodeScannerViewController {
 
 }
 
-//MARK:- Preview Setup
+//MARK:- Video Preview Layer Setup
 
 private extension QRCodeScannerViewController {
 
     func setupPreviewLayer() {
-
         guard let session = self.captureSession else {  return }
         self.videoPreviewLayer = AVCaptureVideoPreviewLayer(session: session)
         self.videoPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
@@ -186,7 +206,7 @@ private extension QRCodeScannerViewController {
 
 private extension QRCodeScannerViewController {
 
-    func reStart() {
+    func start() {
         sessionQueue.async {
             self.captureSession?.startRunning()
         }
@@ -208,6 +228,34 @@ private extension QRCodeScannerViewController {
 //MARK:- AVCaptureMetadataOutputObjectsDelegate
 
 extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+       
+        if metadataObjects.isEmpty {
+            return
+        }
+
+        guard let metadataObj = metadataObjects[0] as? AVMetadataMachineReadableCodeObject else {
+            return
+        }
+
+        if metadataObj.type == AVMetadataObject.ObjectType.qr {
+            self.stopSessionInMainThread()
+            DispatchQueue.main.async {
+                if let qrstring = metadataObj.stringValue {
+                    let deString = self.decrypt(qrString: qrstring)
+
+                    guard let mode = QRData(withDecodedString: deString).qrTransactionMode, mode == QRData.QRTransactionMode.payMerchat,  deString.count > 0 else {
+                        self.showAlertWithCompletion(title: "Invalid QR Code", completion: { _ in
+                            self.start()
+                        })
+                        return
+                    }
+                    self.scannerDelegate?.scannerSucceed(qrString: deString)
+                }
+            }
+        }
+    }
 
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
 
@@ -219,7 +267,6 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             if metadataObj!.type == AVMetadataObject.ObjectType.qr {
                 self.stopSessionInMainThread()
                 DispatchQueue.main.async {
-
                 if let qrstring = metadataObj!.stringValue {
                     let deString = self.decrypt(qrString: qrstring)
                     print("decrypted QR Data \(deString)")
@@ -228,57 +275,6 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
 //                            self.reStart()
 //                        })
 //                        return
-//                    }
-//                    switch mode {
-//                    case .sendMoney:
-//                        let qrPayCoordinator = SendwithQRCoordinator(withRootViewController: self.navigationController!, qrData: QRData(withDecodedString: deString))
-//                        qrPayCoordinator.start()
-//                        break
-//                    case .payMerchat:
-//
-//                        if self.isSendMoney == true {
-//                            self.showAlertWithCompletion(title: "Please use a valid QR Code for send money", completion: { _ in
-//                                self.reStart()
-//                            })
-//                            return
-//                        }
-//
-//                        let data = QRData(withDecodedString: deString)
-//                        guard let _ = data.mobileNumber else {
-//                            self.showAlertWithCompletion(title: "Invalid QR Data", completion: { _ in
-//                                self.reStart()
-//                            })
-//                            return
-//                        }
-//                        //HYBRID AGENT MERCHANT ACTIONS
-//
-//                        let selectHybridActionvC = SelectHybridActionViewController.initFromStoryboard(name: "QRCode")
-//                        selectHybridActionvC.qrData = data
-//                        self.navigationController?.pushViewController(selectHybridActionvC, animated: true)
-//                        break
-//                    case .agent:
-//
-//                        if self.isSendMoney == true {
-//                            self.showAlertWithCompletion(title: "Please use a valid QR Code for send money", completion: { _ in
-//                                self.reStart()
-//                            })
-//                            return
-//                        }
-//
-//
-//                        let data = QRData(withDecodedString: deString)
-//                        guard let _ = data.mobileNumber else {
-//                            self.showAlertWithCompletion(title: "Invalid QR Data", completion: { _ in
-//                                self.reStart()
-//                            })
-//                            return
-//                        }
-//
-//                        //HYBRID AGENT MERCHANT ACTIONS
-//                        let selectHybridActionvC = SelectHybridActionViewController.initFromStoryboard(name: "QRCode")
-//                        selectHybridActionvC.qrData = data
-//                        self.navigationController?.pushViewController(selectHybridActionvC, animated: true)
-//                        break
 //                    }
                 }
             }

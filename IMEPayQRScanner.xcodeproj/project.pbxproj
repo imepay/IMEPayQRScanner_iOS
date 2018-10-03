@@ -16,8 +16,10 @@
 		A969434E216370FC00CF284D /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969434D216370FC00CF284D /* OverlayView.swift */; };
 		A96943502163710400CF284D /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A969434F2163710400CF284D /* QRCode.storyboard */; };
 		A96943522163712B00CF284D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96943512163712B00CF284D /* BaseViewController.swift */; };
-		A96943542163719100CF284D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96943532163719100CF284D /* UIViewController+Extensions.swift */; };
+		A96943542163719100CF284D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96943532163719100CF284D /* Extensions.swift */; };
 		A969438221638F1900CF284D /* IMPScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969438121638F1900CF284D /* IMPScannerCoordinator.swift */; };
+		A9AD21BE2164822500439CC9 /* IC_CLOSE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */; };
+		A9AD21C02164996200439CC9 /* QRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD21BF2164996100439CC9 /* QRModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +47,10 @@
 		A969434D216370FC00CF284D /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		A969434F2163710400CF284D /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		A96943512163712B00CF284D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		A96943532163719100CF284D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A96943532163719100CF284D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A969438121638F1900CF284D /* IMPScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMPScannerCoordinator.swift; sourceTree = "<group>"; };
+		A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IC_CLOSE@2x.png"; sourceTree = "<group>"; };
+		A9AD21BF2164996100439CC9 /* QRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRModel.swift; sourceTree = "<group>"; };
 		BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5E76D37C0E8D58E8A7DF81 /* Pods-IMEPayQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScanner/Pods-IMEPayQRScanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,9 +124,11 @@
 				A969434B21636EA600CF284D /* QRCodeScannerViewController.swift */,
 				A969434D216370FC00CF284D /* OverlayView.swift */,
 				A969434F2163710400CF284D /* QRCode.storyboard */,
-				A96943532163719100CF284D /* UIViewController+Extensions.swift */,
+				A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */,
+				A96943532163719100CF284D /* Extensions.swift */,
 				A969433421636E5700CF284D /* IMEPayQRScanner.h */,
 				A969433521636E5700CF284D /* Info.plist */,
+				A9AD21BF2164996100439CC9 /* QRModel.swift */,
 			);
 			path = IMEPayQRScanner;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96943502163710400CF284D /* QRCode.storyboard in Resources */,
+				A9AD21BE2164822500439CC9 /* IC_CLOSE@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AD21C02164996200439CC9 /* QRModel.swift in Sources */,
 				A969438221638F1900CF284D /* IMPScannerCoordinator.swift in Sources */,
-				A96943542163719100CF284D /* UIViewController+Extensions.swift in Sources */,
+				A96943542163719100CF284D /* Extensions.swift in Sources */,
 				A969434C21636EA600CF284D /* QRCodeScannerViewController.swift in Sources */,
 				A969434E216370FC00CF284D /* OverlayView.swift in Sources */,
 				A96943522163712B00CF284D /* BaseViewController.swift in Sources */,

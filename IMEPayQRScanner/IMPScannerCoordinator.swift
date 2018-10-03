@@ -8,6 +8,15 @@
 
 import UIKit
 
+// MARK:- Scanner Controller Delegate protocol
+
+protocol ScannerControllerDelegate: class {
+    func scannerSucceed(qrString: String?)
+    func scannerFailed(errorMessage: String?)
+}
+
+// MARK:- SDK Coordinator
+
 final public class IMPScannerCoordinator {
 
     private struct Constants {
@@ -32,9 +41,24 @@ final public class IMPScannerCoordinator {
             onScanFailure?(Constants.somethingWentWrongMessage)
             return
         }
-
+        
+        scannerVc.scannerDelegate = self
         self.parentVc?.present(scannerVc, animated: true, completion: nil)
     }
 }
 
+// MARK:- ScannerControllerDelegate
+
+extension IMPScannerCoordinator: ScannerControllerDelegate {
+    
+    func scannerSucceed(qrString: String?) {
+        onScanSuccess?(qrString)
+        self.parentVc?.presentedViewController?.dissmiss()
+    }
+
+    func scannerFailed(errorMessage: String?) {
+        onScanFailure?(errorMessage)
+        self.parentVc?.presentedViewController?.dissmiss()
+    }
+}
 

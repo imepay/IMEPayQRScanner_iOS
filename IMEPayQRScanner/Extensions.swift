@@ -114,3 +114,16 @@ extension UIViewController {
     }
 
 }
+
+extension UIView {
+
+    func rounded() {
+        set(cornerRadius: self.frame.height / 2)
+    }
+
+    func set(cornerRadius radius: CGFloat) {
+        self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
+    }
+    
+}
