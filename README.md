@@ -42,6 +42,10 @@ $ pod install
 
 ## Usage
 
+For iOS 10+, you have to provide camera ussage description, for that you'll need to add the Privacy - Camera Usage Description (NSCameraUsageDescription) field in your Info.plist:
+
+![Screenshot](screenshot.png)
+
 ```
 let viewController = Your view controller from which scanner is opened
 
