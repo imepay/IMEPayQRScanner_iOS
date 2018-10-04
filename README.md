@@ -10,7 +10,8 @@ Scan QR Code issued by IME Pay to its merchants.
 
 ## Features
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- [x] Scan IME Pay merchant's QR Code
+- [x] SDK Returns merchant's code and merchant name.
 
 ### Requirements
 
