@@ -156,6 +156,7 @@
 		A969432721636E5700CF284D = {
 			isa = PBXGroup;
 			children = (
+				A97EDB1821660AC2001E0786 /* snapshot.png */,
 				A969433321636E5700CF284D /* IMEPayQRScanner */,
 				A969433E21636E5700CF284D /* IMEPayQRScannerTests */,
 				A97EDAF92165FA82001E0786 /* ScannerDemo */,
@@ -180,7 +181,6 @@
 		A969433321636E5700CF284D /* IMEPayQRScanner */ = {
 			isa = PBXGroup;
 			children = (
-				A97EDB1821660AC2001E0786 /* snapshot.png */,
 				A969438121638F1900CF284D /* IMPScannerCoordinator.swift */,
 				A96943512163712B00CF284D /* BaseViewController.swift */,
 				A969434F2163710400CF284D /* Scanner.storyboard */,
