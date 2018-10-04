@@ -11,7 +11,7 @@ import UIKit
 // MARK:- Scanner Controller Delegate protocol
 
 protocol ScannerControllerDelegate: class {
-    func scannerSucceed(qrString: String?)
+    func scannerSucceed(name: String?, mobileNumberOrCode: String?)
     func scannerFailed(errorMessage: String?)
     func cancelled()
 }
@@ -25,7 +25,7 @@ final public class IMPScannerCoordinator {
         static let cancelledMessage = "Cancelled by user"
     }
 
-    var onScanSuccess: (( _ qrString: String?) -> Void)?
+    var onScanSuccess: (( _ name : String?, _ mobileNumberOrCode: String?) -> Void)?
     var onScanFailure: (( _ errorMessage: String?) -> Void)?
 
     private var parentVc: UIViewController?
@@ -44,9 +44,9 @@ final public class IMPScannerCoordinator {
 // MARK:- ScannerControllerDelegate
 
 extension IMPScannerCoordinator: ScannerControllerDelegate {
-    
-    func scannerSucceed(qrString: String?) {
-        onScanSuccess?(qrString)
+
+    func scannerSucceed(name: String?, mobileNumberOrCode: String?) {
+        onScanSuccess?(name, mobileNumberOrCode)
         self.parentVc?.presentedViewController?.dissmiss()
     }
 

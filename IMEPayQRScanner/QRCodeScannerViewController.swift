@@ -26,6 +26,8 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
         static let settingActionTitle = "Settings"
         static let authAlertCancelActionTitle = "Cancel"
         static let invalidQRMessage  = "Invalid QR Code"
+        static let deviceErrorMessage = "Something went wrong, Please try later."
+        static let deviceErrorInfo = "Device error."
     }
 
     //MARK:- Session Queue
@@ -163,8 +165,8 @@ private extension QRCodeScannerViewController {
 
             if session.canAddInput(deviceInput) {
                  self.captureSession?.addInput(deviceInput)
-            }else { // Handle the case
-
+            }else {
+                 self.showDeviceErrorAlert()
             }
     
             let captureMetadataOutput = AVCaptureMetadataOutput()
@@ -181,9 +183,16 @@ private extension QRCodeScannerViewController {
                 }
                 output?.rectOfInterest = frameOfInterest
             }else {
-                // Handle the Case
+                self.showDeviceErrorAlert()
             }
         }
+    }
+    
+    func showDeviceErrorAlert() {
+        self.showAlertWithCompletion(title: Constants.deviceErrorMessage, completion: { _ in
+            scannerDelegate?.scannerFailed(errorMessage: Constants.deviceErrorInfo)
+            self.dissmiss()
+        })
     }
 
 }
@@ -252,7 +261,8 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
                         })
                         return
                     }
-                    self.scannerDelegate?.scannerSucceed(qrString: deString)
+                    let info = IMPQRInfo(withDecodedString: deString)
+                    self.scannerDelegate?.scannerSucceed(name: info.name, mobileNumberOrCode: info.mobileNumberOrCode)
                 }
             }
         }
