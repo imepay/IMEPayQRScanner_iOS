@@ -40,7 +40,23 @@ $ pod install
 
 ## Usage
 
-Explain how to run the automated tests for this system
+```
+let viewController = Your view controller from which scanner is opened
+
+let coordinator = IMPScannerCoordinator(parentViewController: viewController)
+
+```
+```
+coordinator.onScanSuccess  = { name, mobileNumOrCode in
+       print("Merchant Name \(name ?? "")")
+       print("Merchant Mobile Number / Code \(mobileNumOrCode ?? "")") // Use this for transactions
+}
+        
+coordinator.onScanFailure = {
+       print("Scanner failure message \($0 ?? "")")
+}
+coordinator.start()
+```
 
 ### License
 
