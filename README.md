@@ -13,9 +13,11 @@ Scan QR Code issued by IME Pay to its merchants.
 - [x] Scan IME Pay merchant's QR Code
 - [x] SDK Returns merchant's code and merchant name.
 
-### Requirements
+## Requirements
 
 * iOS 8+
+
+## Installation
 
 ### Installation
 
@@ -58,6 +60,6 @@ coordinator.onScanFailure = {
 coordinator.start()
 ```
 
-### License
+## License
 
 Alamofire is released under the MIT license. [See LICENSE](https://github.com/imepay/IMEPayQRScanner_iOS/blob/master/LICENSE) for details.
