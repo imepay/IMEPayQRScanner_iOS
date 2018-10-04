@@ -73,33 +73,4 @@ struct IMPQRInfo {
         return number
     }
 
-//    var payAmount: String? {
-//        guard let transactionMode = self.qrTransactionMode else {
-//            return nil
-//        }
-//        if transactionMode == .payMerchat {
-//
-//            let components = decodedString.components(separatedBy: ",")
-//            if 2 < components.count {
-//                return decodedString.components(separatedBy: ",")[2]
-//            }
-//        }
-//        return nil
-//    }
-    
-    // Reference value
-
-//    var refValue: String? {
-//        guard let transactionMode = self.qrTransactionMode else {
-//            return nil
-//        }
-//
-//        if transactionMode == .payMerchat {
-//            let components = decodedString.components(separatedBy: ",")
-//            if 3 < components.count {
-//                return decodedString.components(separatedBy: ",")[3]
-//            }
-//        }
-//        return nil
-//    }
 }

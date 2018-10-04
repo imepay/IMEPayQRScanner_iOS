@@ -190,7 +190,7 @@ private extension QRCodeScannerViewController {
     
     func showDeviceErrorAlert() {
         self.showAlertWithCompletion(title: Constants.deviceErrorMessage, completion: { _ in
-            scannerDelegate?.scannerFailed(errorMessage: Constants.deviceErrorInfo)
+            self.scannerDelegate?.scannerFailed(errorMessage: Constants.deviceErrorInfo)
             self.dissmiss()
         })
     }
@@ -254,7 +254,6 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             DispatchQueue.main.async {
                 if let qrstring = metadataObj.stringValue {
                     let deString = CryptoManager.decrypt(qrString: qrstring)
-                    print("decrypted QR Data \(deString)")
                     guard let mode = IMPQRInfo(withDecodedString: deString).qrTransactionMode, mode == IMPQRInfo.QRTransactionMode.payMerchat,  !deString.isEmpty else {
                         self.showAlertWithCompletion(title: Constants.invalidQRMessage, completion: { _ in
                             self.start()
@@ -268,18 +267,3 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
         }
     }
 }
-
-//MARK:- Decryption
-
-//extension QRCodeScannerViewController {
-//
-//    func decrypt(qrString: String) -> String {
-//        do {
-//            let decrypted =   try AES(key: imePaySecretKey, iv: imePayIv, blockMode: .CBC, padding: .noPadding).decrypt(Array<UInt8>(hex: qrString))
-//             return String(data: Data(decrypted), encoding: String.Encoding.utf8) ?? ""
-//        } catch _ {
-//            print("Failed to decrypt the QR Data")
-//        }
-//        return ""
-//    }
-//}

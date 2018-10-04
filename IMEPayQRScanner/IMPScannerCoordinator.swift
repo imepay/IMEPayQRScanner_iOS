@@ -25,8 +25,8 @@ final public class IMPScannerCoordinator {
         static let cancelledMessage = "Cancelled by user"
     }
 
-    var onScanSuccess: (( _ name : String?, _ mobileNumberOrCode: String?) -> Void)?
-    var onScanFailure: (( _ errorMessage: String?) -> Void)?
+    public var onScanSuccess: (( _ name : String?, _ mobileNumberOrCode: String?) -> Void)?
+    public var onScanFailure: (( _ errorMessage: String?) -> Void)?
 
     private var parentVc: UIViewController?
 

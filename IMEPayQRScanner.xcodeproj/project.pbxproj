@@ -123,9 +123,9 @@
 			children = (
 				A969438121638F1900CF284D /* IMPScannerCoordinator.swift */,
 				A96943512163712B00CF284D /* BaseViewController.swift */,
+				A969434F2163710400CF284D /* Scanner.storyboard */,
 				A969434B21636EA600CF284D /* QRCodeScannerViewController.swift */,
 				A969434D216370FC00CF284D /* OverlayView.swift */,
-				A969434F2163710400CF284D /* Scanner.storyboard */,
 				A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */,
 				A96943532163719100CF284D /* Extensions.swift */,
 				A969433421636E5700CF284D /* IMEPayQRScanner.h */,

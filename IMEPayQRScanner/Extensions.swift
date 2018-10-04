@@ -53,26 +53,6 @@ extension UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-    
-    func showAlertWithOk(title: String?, message: String? = "", action1Title: String? = "Ok",  action2Title: String? = "Cancel", completion: @escaping (UIAlertAction) -> ()) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action1 = UIAlertAction(title: action1Title, style: .default, handler: completion)
-        let action2 = UIAlertAction(title: action2Title, style: .default)
-        
-        alert.addAction(action1)
-        alert.addAction(action2)
-        present(alert, animated: true, completion: nil)
-    }
-
-    func showAlertWithOkCancel(title: String?, message: String? = "", action1Title: String? = "Ok",  action2Title: String? = "Cancel", okAction: @escaping (UIAlertAction) -> (), cancelAction: @escaping (UIAlertAction) -> ()) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action1 = UIAlertAction(title: action1Title, style: .default, handler: okAction)
-        let action2 = UIAlertAction(title: action2Title, style: .default, handler: cancelAction)
-        alert.addAction(action2)
-        alert.addAction(action1)
-        present(alert, animated: true, completion: nil)
-    }
-
 }
 
 // UIView Extensions
