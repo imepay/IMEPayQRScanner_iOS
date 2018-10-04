@@ -22,7 +22,7 @@ final public class IMPScannerCoordinator {
 
     private struct Constants {
         static let mainStoryboardName = "Scanner"
-        static let somethingWentWrongMessage = "Something Went Wrong, Please try again later."
+        static let cancelledMessage = "Cancelled by user"
     }
 
     var onScanSuccess: (( _ qrString: String?) -> Void)?
@@ -56,6 +56,6 @@ extension IMPScannerCoordinator: ScannerControllerDelegate {
     }
     
     func cancelled() {
-        
+        onScanFailure?(Constants.cancelledMessage)
     }
 }

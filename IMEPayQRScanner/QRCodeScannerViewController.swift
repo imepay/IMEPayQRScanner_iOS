@@ -22,9 +22,10 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
     @IBOutlet weak var instructionLabel : UILabel!
     @IBOutlet weak var dissmissBtnView: UIView!
 
+    // MARK:- Constants
+
     private struct Constants {
-        
-        static let sessionQueueLabel = "IMEPAY_SESSION_QUEUE"
+        static let sessionQueueLabel = "IMEPAY_AV_SESSION_QUEUE"
         static let alertTitle = "Alert!"
         static let turnOnCameraMessage = "Camera Should be turned on."
         static let settingActionTitle = "Settings"
@@ -59,9 +60,7 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
         super.viewDidLoad()
         // Session setup.
         setupCaptureSession()
-        view.bringSubview(toFront: overlayView)
-        view.bringSubview(toFront: instructionLabel)
-        dissmissBtnView.rounded()
+        setupUI()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -76,16 +75,22 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        //stop()
         stopSessionInMainThread()
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
     }
 }
 
-// MARK:- Gesture Setup
+// MARK:- UI Setup
+
+private extension QRCodeScannerViewController {
+
+    func setupUI() {
+        view.bringSubview(toFront: overlayView)
+        view.bringSubview(toFront: instructionLabel)
+        dissmissBtnView.rounded()
+    }
+}
+
+// MARK:- Gesture setup
 
 private extension QRCodeScannerViewController {
     
@@ -182,7 +187,6 @@ private extension QRCodeScannerViewController {
             }else {
                 // Handle the Case
             }
-
         }
     }
 
