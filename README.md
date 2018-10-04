@@ -1,4 +1,4 @@
-# IME Pay QR Scanner for iOS Apps
+# IME Pay QR Scanner for iOS
 
 Scan QR Code issued by IME Pay to its merchants.
 
