@@ -46,6 +46,13 @@ For iOS 10+, you have to provide camera ussage description, for that you'll need
 
 ![Screenshot](snapshot.png)
 
+And do
+
+```
+import IMEPayQRScanner
+
+```
+
 ```
 let viewController = Your view controller from which scanner is opened
 
