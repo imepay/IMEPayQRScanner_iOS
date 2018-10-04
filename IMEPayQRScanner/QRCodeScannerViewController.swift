@@ -9,11 +9,6 @@
 import AVFoundation
 import CryptoSwift
 
-//MARK:- Encryption Keys
-
-let imePayIv: String = "190db824fe56c37a"
-let imePaySecretKey: String = "081a49b37c56e2fd"
-
 class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
 
     //MARK:- IBOutlets
@@ -30,6 +25,7 @@ class QRCodeScannerViewController: BaseViewController, StoryboardInitializable {
         static let turnOnCameraMessage = "Camera Should be turned on."
         static let settingActionTitle = "Settings"
         static let authAlertCancelActionTitle = "Cancel"
+        static let invalidQRMessage  = "Invalid QR Code"
     }
 
     //MARK:- Session Queue
@@ -248,10 +244,10 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
             self.stopSessionInMainThread()
             DispatchQueue.main.async {
                 if let qrstring = metadataObj.stringValue {
-                    let deString = self.decrypt(qrString: qrstring)
+                    let deString = CryptoManager.decrypt(qrString: qrstring)
                     print("decrypted QR Data \(deString)")
                     guard let mode = IMPQRInfo(withDecodedString: deString).qrTransactionMode, mode == IMPQRInfo.QRTransactionMode.payMerchat,  !deString.isEmpty else {
-                        self.showAlertWithCompletion(title: "Invalid QR Code", completion: { _ in
+                        self.showAlertWithCompletion(title: Constants.invalidQRMessage, completion: { _ in
                             self.start()
                         })
                         return
@@ -265,15 +261,15 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
 
 //MARK:- Decryption
 
-extension QRCodeScannerViewController {
-
-    func decrypt(qrString: String) -> String {
-        do {
-            let decrypted =   try AES(key: imePaySecretKey, iv: imePayIv, blockMode: .CBC, padding: .noPadding).decrypt(Array<UInt8>(hex: qrString))
-             return String(data: Data(decrypted), encoding: String.Encoding.utf8) ?? ""
-        } catch _ {
-            print("Failed to decrypt the QR Data")
-        }
-        return ""
-    }
-}
+//extension QRCodeScannerViewController {
+//
+//    func decrypt(qrString: String) -> String {
+//        do {
+//            let decrypted =   try AES(key: imePaySecretKey, iv: imePayIv, blockMode: .CBC, padding: .noPadding).decrypt(Array<UInt8>(hex: qrString))
+//             return String(data: Data(decrypted), encoding: String.Encoding.utf8) ?? ""
+//        } catch _ {
+//            print("Failed to decrypt the QR Data")
+//        }
+//        return ""
+//    }
+//}

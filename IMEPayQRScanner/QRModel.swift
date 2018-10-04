@@ -11,6 +11,7 @@ import Foundation
 // QR Data model
 
 struct IMPQRInfo {
+
     // Transaction Modes
 
     enum QRTransactionMode: String {
@@ -51,7 +52,7 @@ struct IMPQRInfo {
         return fullname?.replacingOccurrences(of: "_", with: " ")
     }
     
-    //Mobile Number Or Merchant Code in case of Merchant Pay
+    // Mobile Number Or Merchant Code in case of Merchant Pay
     
     var mobileNumberOrCode: String? {
         guard let transactionMode = self.qrTransactionMode else {

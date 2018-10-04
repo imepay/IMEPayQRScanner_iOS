@@ -39,6 +39,7 @@ extension StoryboardInitializable where Self: UIViewController {
 // MARK:- Alert Handlers
 
 extension UIViewController {
+
     func showAlert(title: String?, message: String? = "", actionTitle: String? = "Ok") {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: actionTitle, style: .default, handler: nil)
@@ -62,7 +63,7 @@ extension UIViewController {
         alert.addAction(action2)
         present(alert, animated: true, completion: nil)
     }
-    
+
     func showAlertWithOkCancel(title: String?, message: String? = "", action1Title: String? = "Ok",  action2Title: String? = "Cancel", okAction: @escaping (UIAlertAction) -> (), cancelAction: @escaping (UIAlertAction) -> ()) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action1 = UIAlertAction(title: action1Title, style: .default, handler: okAction)
