@@ -27,6 +27,7 @@
 		A97EDB022165FA85001E0786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97EDB012165FA85001E0786 /* Assets.xcassets */; };
 		A97EDB052165FA85001E0786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97EDB032165FA85001E0786 /* LaunchScreen.storyboard */; };
 		A97EDB102165FA85001E0786 /* ScannerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EDB0F2165FA85001E0786 /* ScannerDemoTests.swift */; };
+		A97EDB1921660AC2001E0786 /* snapshot.png in Resources */ = {isa = PBXBuildFile; fileRef = A97EDB1821660AC2001E0786 /* snapshot.png */; };
 		A9AD21BE2164822500439CC9 /* IC_CLOSE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */; };
 		A9AD21C02164996200439CC9 /* QRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD21BF2164996100439CC9 /* QRModel.swift */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		A97EDB0B2165FA85001E0786 /* ScannerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScannerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97EDB0F2165FA85001E0786 /* ScannerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDemoTests.swift; sourceTree = "<group>"; };
 		A97EDB112165FA85001E0786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97EDB1821660AC2001E0786 /* snapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot.png; sourceTree = "<group>"; };
 		A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IC_CLOSE@2x.png"; sourceTree = "<group>"; };
 		A9AD21BF2164996100439CC9 /* QRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRModel.swift; sourceTree = "<group>"; };
 		BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 		A969433321636E5700CF284D /* IMEPayQRScanner */ = {
 			isa = PBXGroup;
 			children = (
+				A97EDB1821660AC2001E0786 /* snapshot.png */,
 				A969438121638F1900CF284D /* IMPScannerCoordinator.swift */,
 				A96943512163712B00CF284D /* BaseViewController.swift */,
 				A969434F2163710400CF284D /* Scanner.storyboard */,
@@ -367,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97EDB1921660AC2001E0786 /* snapshot.png in Resources */,
 				A96943502163710400CF284D /* Scanner.storyboard in Resources */,
 				A9AD21BE2164822500439CC9 /* IC_CLOSE@2x.png in Resources */,
 			);
