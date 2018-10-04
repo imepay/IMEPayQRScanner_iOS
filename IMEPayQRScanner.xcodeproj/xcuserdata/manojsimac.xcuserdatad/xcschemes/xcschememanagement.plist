@@ -7,7 +7,12 @@
 		<key>IMEPayQRScanner.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>6</integer>
+		</dict>
+		<key>ScannerDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 </dict>

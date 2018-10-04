@@ -1,16 +1,21 @@
 PODS:
   - CryptoSwift (0.7.2)
+  - IMEPayQRScanner (0.0.1):
+    - CryptoSwift (~> 0.7.1)
 
 DEPENDENCIES:
   - CryptoSwift (~> 0.7.1)
+  - IMEPayQRScanner
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CryptoSwift
+    - IMEPayQRScanner
 
 SPEC CHECKSUMS:
   CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
+  IMEPayQRScanner: 493ff71fd9a8212f863ea0cb95bdf1a5f175a658
 
-PODFILE CHECKSUM: cf72eb8d69465cec89d265b4c6ac26277d07680c
+PODFILE CHECKSUM: 75446e13bb4650cdd2b2dbb8365f9fa06d560f2d
 
 COCOAPODS: 1.5.2

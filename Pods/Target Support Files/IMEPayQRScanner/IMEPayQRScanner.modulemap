@@ -1,0 +1,6 @@
+framework module IMEPayQRScanner {
+  umbrella header "IMEPayQRScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

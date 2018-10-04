@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E14026C78062A3C5679272 /* Pods_ScannerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89A2D21AD62F6409B173E7D /* Pods_ScannerDemo.framework */; };
 		239229D5B96084128999FAB9 /* Pods_IMEPayQRScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */; };
 		67F67B731117904CB18B6872 /* Pods_IMEPayQRScannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAA1F9FB24E123E75C91E70 /* Pods_IMEPayQRScannerTests.framework */; };
+		6D41B5863103361936131A30 /* Pods_ScannerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA205048234D4F317454027 /* Pods_ScannerDemoTests.framework */; };
 		A969433B21636E5700CF284D /* IMEPayQRScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A969433121636E5700CF284D /* IMEPayQRScanner.framework */; };
 		A969434021636E5700CF284D /* IMEPayQRScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969433F21636E5700CF284D /* IMEPayQRScannerTests.swift */; };
 		A969434221636E5700CF284D /* IMEPayQRScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = A969433421636E5700CF284D /* IMEPayQRScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,6 +21,12 @@
 		A96943542163719100CF284D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96943532163719100CF284D /* Extensions.swift */; };
 		A969438221638F1900CF284D /* IMPScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969438121638F1900CF284D /* IMPScannerCoordinator.swift */; };
 		A97EDAF32165DD3D001E0786 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EDAF22165DD3D001E0786 /* CryptoManager.swift */; };
+		A97EDAFB2165FA82001E0786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EDAFA2165FA82001E0786 /* AppDelegate.swift */; };
+		A97EDAFD2165FA82001E0786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EDAFC2165FA82001E0786 /* ViewController.swift */; };
+		A97EDB002165FA82001E0786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97EDAFE2165FA82001E0786 /* Main.storyboard */; };
+		A97EDB022165FA85001E0786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97EDB012165FA85001E0786 /* Assets.xcassets */; };
+		A97EDB052165FA85001E0786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97EDB032165FA85001E0786 /* LaunchScreen.storyboard */; };
+		A97EDB102165FA85001E0786 /* ScannerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EDB0F2165FA85001E0786 /* ScannerDemoTests.swift */; };
 		A9AD21BE2164822500439CC9 /* IC_CLOSE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */; };
 		A9AD21C02164996200439CC9 /* QRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD21BF2164996100439CC9 /* QRModel.swift */; };
 /* End PBXBuildFile section */
@@ -31,13 +39,22 @@
 			remoteGlobalIDString = A969433021636E5700CF284D;
 			remoteInfo = IMEPayQRScanner;
 		};
+		A97EDB0C2165FA85001E0786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A969432821636E5700CF284D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97EDAF72165FA82001E0786;
+			remoteInfo = ScannerDemo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		294FF94E93673E2982C82A48 /* Pods-ScannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScannerDemo/Pods-ScannerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4DF306EEA4060EC1D2843ADD /* Pods-IMEPayQRScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScannerTests/Pods-IMEPayQRScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FA54A57795A46ED43330D77 /* Pods-IMEPayQRScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScannerTests/Pods-IMEPayQRScannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		802F0E62D8694C5A91230788 /* Pods-IMEPayQRScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScanner/Pods-IMEPayQRScanner.debug.xcconfig"; sourceTree = "<group>"; };
 		8DAA1F9FB24E123E75C91E70 /* Pods_IMEPayQRScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEPayQRScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA205048234D4F317454027 /* Pods_ScannerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScannerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A969433121636E5700CF284D /* IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A969433421636E5700CF284D /* IMEPayQRScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMEPayQRScanner.h; sourceTree = "<group>"; };
 		A969433521636E5700CF284D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,10 +68,24 @@
 		A96943532163719100CF284D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A969438121638F1900CF284D /* IMPScannerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMPScannerCoordinator.swift; sourceTree = "<group>"; };
 		A97EDAF22165DD3D001E0786 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		A97EDAF82165FA82001E0786 /* ScannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97EDAFA2165FA82001E0786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A97EDAFC2165FA82001E0786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A97EDAFF2165FA82001E0786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A97EDB012165FA85001E0786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97EDB042165FA85001E0786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A97EDB062165FA85001E0786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97EDB0B2165FA85001E0786 /* ScannerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScannerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97EDB0F2165FA85001E0786 /* ScannerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDemoTests.swift; sourceTree = "<group>"; };
+		A97EDB112165FA85001E0786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9AD21BD2164822500439CC9 /* IC_CLOSE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IC_CLOSE@2x.png"; sourceTree = "<group>"; };
 		A9AD21BF2164996100439CC9 /* QRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRModel.swift; sourceTree = "<group>"; };
 		BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91FF4ECCCEC9931474B387C /* Pods-ScannerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScannerDemoTests/Pods-ScannerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E214B3A1B1288A8A6DFBDF6C /* Pods-ScannerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScannerDemoTests/Pods-ScannerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB5E76D37C0E8D58E8A7DF81 /* Pods-IMEPayQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMEPayQRScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMEPayQRScanner/Pods-IMEPayQRScanner.release.xcconfig"; sourceTree = "<group>"; };
+		F38FBCB0A5FED7BEDD58CA22 /* Pods-ScannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScannerDemo/Pods-ScannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F89A2D21AD62F6409B173E7D /* Pods_ScannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScannerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A97EDAF52165FA82001E0786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E14026C78062A3C5679272 /* Pods_ScannerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97EDB082165FA85001E0786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D41B5863103361936131A30 /* Pods_ScannerDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +132,10 @@
 				EB5E76D37C0E8D58E8A7DF81 /* Pods-IMEPayQRScanner.release.xcconfig */,
 				4DF306EEA4060EC1D2843ADD /* Pods-IMEPayQRScannerTests.debug.xcconfig */,
 				4FA54A57795A46ED43330D77 /* Pods-IMEPayQRScannerTests.release.xcconfig */,
+				F38FBCB0A5FED7BEDD58CA22 /* Pods-ScannerDemo.debug.xcconfig */,
+				294FF94E93673E2982C82A48 /* Pods-ScannerDemo.release.xcconfig */,
+				E214B3A1B1288A8A6DFBDF6C /* Pods-ScannerDemoTests.debug.xcconfig */,
+				D91FF4ECCCEC9931474B387C /* Pods-ScannerDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -94,6 +145,8 @@
 			children = (
 				BA8FD766FA55CF37EA2B4085 /* Pods_IMEPayQRScanner.framework */,
 				8DAA1F9FB24E123E75C91E70 /* Pods_IMEPayQRScannerTests.framework */,
+				F89A2D21AD62F6409B173E7D /* Pods_ScannerDemo.framework */,
+				9BA205048234D4F317454027 /* Pods_ScannerDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +156,8 @@
 			children = (
 				A969433321636E5700CF284D /* IMEPayQRScanner */,
 				A969433E21636E5700CF284D /* IMEPayQRScannerTests */,
+				A97EDAF92165FA82001E0786 /* ScannerDemo */,
+				A97EDB0E2165FA85001E0786 /* ScannerDemoTests */,
 				A969433221636E5700CF284D /* Products */,
 				4A4EC3618347E94130503844 /* Pods */,
 				6DB48D686FAC3B8B8A7328E9 /* Frameworks */,
@@ -114,6 +169,8 @@
 			children = (
 				A969433121636E5700CF284D /* IMEPayQRScanner.framework */,
 				A969433A21636E5700CF284D /* IMEPayQRScannerTests.xctest */,
+				A97EDAF82165FA82001E0786 /* ScannerDemo.app */,
+				A97EDB0B2165FA85001E0786 /* ScannerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +200,28 @@
 				A969434121636E5700CF284D /* Info.plist */,
 			);
 			path = IMEPayQRScannerTests;
+			sourceTree = "<group>";
+		};
+		A97EDAF92165FA82001E0786 /* ScannerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A97EDAFA2165FA82001E0786 /* AppDelegate.swift */,
+				A97EDAFC2165FA82001E0786 /* ViewController.swift */,
+				A97EDAFE2165FA82001E0786 /* Main.storyboard */,
+				A97EDB012165FA85001E0786 /* Assets.xcassets */,
+				A97EDB032165FA85001E0786 /* LaunchScreen.storyboard */,
+				A97EDB062165FA85001E0786 /* Info.plist */,
+			);
+			path = ScannerDemo;
+			sourceTree = "<group>";
+		};
+		A97EDB0E2165FA85001E0786 /* ScannerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A97EDB0F2165FA85001E0786 /* ScannerDemoTests.swift */,
+				A97EDB112165FA85001E0786 /* Info.plist */,
+			);
+			path = ScannerDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +277,44 @@
 			productReference = A969433A21636E5700CF284D /* IMEPayQRScannerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A97EDAF72165FA82001E0786 /* ScannerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97EDB122165FA85001E0786 /* Build configuration list for PBXNativeTarget "ScannerDemo" */;
+			buildPhases = (
+				4B467EF23DF7261A5CAD18F9 /* [CP] Check Pods Manifest.lock */,
+				A97EDAF42165FA82001E0786 /* Sources */,
+				A97EDAF52165FA82001E0786 /* Frameworks */,
+				A97EDAF62165FA82001E0786 /* Resources */,
+				135BE700D590085236337589 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScannerDemo;
+			productName = ScannerDemo;
+			productReference = A97EDAF82165FA82001E0786 /* ScannerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A97EDB0A2165FA85001E0786 /* ScannerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97EDB152165FA85001E0786 /* Build configuration list for PBXNativeTarget "ScannerDemoTests" */;
+			buildPhases = (
+				6043C387B4954999FCE81B7A /* [CP] Check Pods Manifest.lock */,
+				A97EDB072165FA85001E0786 /* Sources */,
+				A97EDB082165FA85001E0786 /* Frameworks */,
+				A97EDB092165FA85001E0786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97EDB0D2165FA85001E0786 /* PBXTargetDependency */,
+			);
+			name = ScannerDemoTests;
+			productName = ScannerDemoTests;
+			productReference = A97EDB0B2165FA85001E0786 /* ScannerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,6 +332,13 @@
 					A969433921636E5700CF284D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					A97EDAF72165FA82001E0786 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A97EDB0A2165FA85001E0786 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A97EDAF72165FA82001E0786;
+					};
 				};
 			};
 			buildConfigurationList = A969432B21636E5700CF284D /* Build configuration list for PBXProject "IMEPayQRScanner" */;
@@ -223,6 +347,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A969432721636E5700CF284D;
 			productRefGroup = A969433221636E5700CF284D /* Products */;
@@ -231,6 +356,8 @@
 			targets = (
 				A969433021636E5700CF284D /* IMEPayQRScanner */,
 				A969433921636E5700CF284D /* IMEPayQRScannerTests */,
+				A97EDAF72165FA82001E0786 /* ScannerDemo */,
+				A97EDB0A2165FA85001E0786 /* ScannerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +379,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A97EDAF62165FA82001E0786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97EDB052165FA85001E0786 /* LaunchScreen.storyboard in Resources */,
+				A97EDB022165FA85001E0786 /* Assets.xcassets in Resources */,
+				A97EDB002165FA82001E0786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97EDB092165FA85001E0786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -267,6 +411,62 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-IMEPayQRScannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		135BE700D590085236337589 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScannerDemo/Pods-ScannerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/IMEPayQRScanner/IMEPayQRScanner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IMEPayQRScanner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScannerDemo/Pods-ScannerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B467EF23DF7261A5CAD18F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScannerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6043C387B4954999FCE81B7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScannerDemoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,6 +534,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A97EDAF42165FA82001E0786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97EDAFD2165FA82001E0786 /* ViewController.swift in Sources */,
+				A97EDAFB2165FA82001E0786 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97EDB072165FA85001E0786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97EDB102165FA85001E0786 /* ScannerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -342,7 +559,31 @@
 			target = A969433021636E5700CF284D /* IMEPayQRScanner */;
 			targetProxy = A969433C21636E5700CF284D /* PBXContainerItemProxy */;
 		};
+		A97EDB0D2165FA85001E0786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97EDAF72165FA82001E0786 /* ScannerDemo */;
+			targetProxy = A97EDB0C2165FA85001E0786 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A97EDAFE2165FA82001E0786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97EDAFF2165FA82001E0786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A97EDB032165FA85001E0786 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97EDB042165FA85001E0786 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A969434321636E5700CF284D /* Debug */ = {
@@ -560,6 +801,88 @@
 			};
 			name = Release;
 		};
+		A97EDB132165FA85001E0786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38FBCB0A5FED7BEDD58CA22 /* Pods-ScannerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH2642V3WY;
+				INFOPLIST_FILE = ScannerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imepay.ScannerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A97EDB142165FA85001E0786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294FF94E93673E2982C82A48 /* Pods-ScannerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH2642V3WY;
+				INFOPLIST_FILE = ScannerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imepay.ScannerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A97EDB162165FA85001E0786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E214B3A1B1288A8A6DFBDF6C /* Pods-ScannerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH2642V3WY;
+				INFOPLIST_FILE = ScannerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imepay.ScannerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScannerDemo.app/ScannerDemo";
+			};
+			name = Debug;
+		};
+		A97EDB172165FA85001E0786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91FF4ECCCEC9931474B387C /* Pods-ScannerDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH2642V3WY;
+				INFOPLIST_FILE = ScannerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imepay.ScannerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScannerDemo.app/ScannerDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +909,24 @@
 			buildConfigurations = (
 				A969434921636E5700CF284D /* Debug */,
 				A969434A21636E5700CF284D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97EDB122165FA85001E0786 /* Build configuration list for PBXNativeTarget "ScannerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97EDB132165FA85001E0786 /* Debug */,
+				A97EDB142165FA85001E0786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97EDB152165FA85001E0786 /* Build configuration list for PBXNativeTarget "ScannerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97EDB162165FA85001E0786 /* Debug */,
+				A97EDB172165FA85001E0786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

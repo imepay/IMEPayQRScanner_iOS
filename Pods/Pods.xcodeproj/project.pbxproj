@@ -7,80 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		106526403D7367B6A4F94EBE32E4E4AF /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020E42C8483C99F8FD7F41D6ED34D40 /* BlockModeOptions.swift */; };
-		15E7B0554118825201203078177E609F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CFCCCE84FD30436877F59411D68DA9 /* Utils.swift */; };
-		1811F4666833B95F3A3A7A41553FE860 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F734FC105583DE2FBA9FD469EA6E53 /* DigestType.swift */; };
-		18954FAFCF37859CB1429C94A1F7F910 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323A39B3C0BCDCF70319C1CADACECE24 /* Updatable.swift */; };
-		1B9D7412E49CFDD1CEEB50C00D23F32E /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F004B39A45A76D44DF4A3719DBAA5B2E /* Array+Extension.swift */; };
-		1E99C0DC016663DE25D5BF860E665892 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7401ECFD930087D7F39D497E911D378 /* Data+Extension.swift */; };
-		20B42EFF78D49D55CE67458F852F3067 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F1C6A658B1306F3DD1583C693DFB7 /* ChaCha20+Foundation.swift */; };
-		2EC465B50B8D924E3E7875A939816EF8 /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD36649CEF79E776BE6C42C4D4FFF0E /* HMAC+Foundation.swift */; };
-		37AB4C5DF3F3CB2D841BC7531D8648C2 /* CSArrayType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8030396BA103AB7092AC6CD83588E /* CSArrayType+Extensions.swift */; };
-		37E62B6249E94BF82879DC9C748CFFDE /* Pods-IMEPayQRScannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93893FB75BD3A42D74F5825F5A175CFF /* Pods-IMEPayQRScannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39E845C25F08A238FFA942330A6F3B21 /* RandomAccessBlockModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47886A948E2CEB7366370B85FD313B8 /* RandomAccessBlockModeWorker.swift */; };
-		3C072678894A386F5608B869DA6305AA /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84515A81C833165500348126DE2A6942 /* Rabbit.swift */; };
-		3D12487E9EB47DC1D18C93780CCDE557 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAA336943AEBDA2BD10612B8DFEFFE /* Rabbit+Foundation.swift */; };
-		40C082B18076A24375622A1957448A87 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60AE4E36280EB8C777BA33E447049B /* AES.swift */; };
-		43522EAFE5A8F10A1BAF69FB82EAA63D /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE17F52E6A54308751FDC439CB9FF595 /* NoPadding.swift */; };
-		45F170A736E1CA34D5066A84A90C30B2 /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA02ADDD3AE60A07581AF6C23C57C1 /* BlockCipher.swift */; };
-		4C76DCE3AE5796C3B625CF264E59E28F /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35813F892718354D75B6FD88D049E13 /* PCBC.swift */; };
-		4ED037577FE82DA38F06553ABE799D90 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74266D83533829A3D4AFB2C642CE467B /* UInt32+Extension.swift */; };
-		4F656AAED181E78C287FA5DCA68AFA9B /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB6701250EFAA12659A68C3526390E0 /* Blowfish+Foundation.swift */; };
-		56FCD8E2F7FAB9F83B7A8417208EECD8 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C74C1969F07A68E136CB0D73EA22D /* CFB.swift */; };
-		5D6821DE0DC076C4863C4B1FCA7C4FDF /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADFB7F3EF39C54AF6CCBD2824A337A /* OFB.swift */; };
-		5E4965103C3132BAC775E322EBA555FD /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72339619FC8ACB1AF034401FF7880597 /* Cryptors.swift */; };
-		5E7CF0574ED8D4D3EA07898BC05B9B44 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D18E9456898778AB5B1F8A6AC9E8FA3 /* Padding.swift */; };
-		6073C82F34939E719D20C6867E4E8C05 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B48C73BC5EC4C4BD434A81F4365217 /* PKCS5.swift */; };
-		64EDCD9A4ADC3B7B9E68FB8945A5BB40 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD875EC99134EC318AB0797BB9D25592 /* SecureBytes.swift */; };
-		656A6289582E554537ED419A60BFF4A9 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378EB019328FA1EE2EDFC6DED5F29127 /* Bit.swift */; };
-		690A0944290908B2FBBCEC3F152F1908 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3818F541D7E2AF74FB98D6F879D7FB /* UInt16+Extension.swift */; };
-		71648F328FEBCE785B620D5BEB551D62 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5964E02C249C20576FB2937D7FADF1 /* BlockMode.swift */; };
-		73B55F6A1662A388B52B6CB888DFC9AC /* Pods-IMEPayQRScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAF00A68D437D136B6D958CB8472897 /* Pods-IMEPayQRScanner-dummy.m */; };
-		7696FC3BF8CDF62D426C5417190066E7 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4892176018D062B80A66778F71DC8D6B /* CryptoSwift-dummy.m */; };
-		7A16649DC486765D9FEA898424704F6B /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FE8F0B53146E5D03AC4F654501916 /* Generics.swift */; };
-		7AD65022E43713569709834981BFDA7A /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB49B9AAA5F1E200C32B0906DFCA7C0 /* Checksum.swift */; };
-		7E7A22DFC5711E73CC978DE27312BDF6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C6F639996A90ECAD26F3842E876C3 /* Int+Extension.swift */; };
-		860FD28776117C83F89951DC3F67D90B /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CB8FFA973A3F6E65C8C736969990EE /* AES+Foundation.swift */; };
-		86916D6AE2D3827309C0A577FB7165E1 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11286F67F6A7E5EE75331B64466F424F /* PKCS7Padding.swift */; };
-		8E352C414DA910D82D5F76C40AB39B9B /* BlockModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4099F300D420CB342B071B11EFE6484B /* BlockModeWorker.swift */; };
-		93AE10259A2E5D0D3FC59DE0A6607249 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDBD9C2B4D04F56985A12BAA34834B /* PKCS7.swift */; };
-		93BA58EEBAF3599949BBE0EEF4A965CA /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B8A9BE9F76A956E0570B14D393561 /* HMAC.swift */; };
-		9AADBF6180E04F4894B5D3398198C5A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		9CE20232510EE59FE400A71DF8C3B30F /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DE7CCE7C627DFA964F5EBFCC2E0BC4 /* ZeroPadding.swift */; };
-		9E0501EF4ACF2A0CDC99F9687D84D48B /* Pods-IMEPayQRScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE21DD43DA885EB5130AFDAE86DC36C /* Pods-IMEPayQRScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E3271279026C3CCC5DC0EBB430CA6D7 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD4C9E85C7A28932A0A7C7F63E5431 /* Authenticator.swift */; };
-		A5BE6D486BFD2909DE6EB3C6ACDA3B54 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF0144DAEBE5E39A3DB94CBB432B75 /* CTR.swift */; };
-		A645E29D79C6313C84D474597DB09634 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 652B38AFEDC540741B2D1D1BCCD1A671 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7679067C5707DAD74218254B1EA7C0D /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077193E2774E69BD7E433B4EC38503D3 /* UInt64+Extension.swift */; };
-		AC2CFD20E2921CDEC49CDCE84D5CF831 /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CB69EBEB58321B3FDB7AC5CBEBF50 /* Blowfish.swift */; };
-		AC9B8C11009653AE3C6A04661B83FAF6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F5EBDDAB166AC1A4452F4C6377E3A4 /* String+Extension.swift */; };
-		AE09CD7C1B9FA65F898F6594BD58D631 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E493429ADC58C3DDB8DD3207A24B5829 /* PBKDF1.swift */; };
-		B163356174AC3904DC6A9E235FFF65AB /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF042F0DCB9009C34BE77586ED91445 /* SHA1.swift */; };
-		C2B49B97085F299A8454F0D1768EADC2 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5241A85EF0689249122D58B12158D6 /* SHA2.swift */; };
-		C7D9C8F3927BC62F5DC058A1B5B92E75 /* CSArrayType+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514255AE071667670C5DB80ED3DC030 /* CSArrayType+Foundation.swift */; };
-		CDE744542C0519D2197E5BE2EC02B96B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D129F339808A6D4E20D83BB066141FAF /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CAAA849F22BE250FB5B005632DA420 /* Collection+Extension.swift */; };
-		D457454E29FB723CD2743D081A4FB68E /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBCC4B1237BE62485DBB7D15254FE97 /* Cipher.swift */; };
-		D8AD5D0AD8DAC7505D464ADA0565809B /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38E9E757F2C1825B4EFC28202EAF50 /* ChaCha20.swift */; };
-		DBF91A96B8205236B3CD925D4E876BC9 /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC582EDEFA53D225E83DCB01949B014 /* SHA3.swift */; };
-		DF1740958185D07FA6DE790EBDD52DC9 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34CF75CD89668098013221990FCA95E /* MD5.swift */; };
-		E194E816DF8DA6B20CC5961973FBA3E5 /* RandomAccessCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA028689C8364D68AD70CAF0C2D9E0B0 /* RandomAccessCryptor.swift */; };
-		E2EB7183921492B9ADA301B037A54A78 /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3A063028D8CDDB163B2AFE5CE90516 /* RandomBytesSequence.swift */; };
-		E5DD6F5F4D08EE86AA06CF05DCC01FF1 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30689D1C2A6D02E1CBDE08787EBFEC /* String+FoundationExtension.swift */; };
-		E6AFA60AD32A7C7A74B2317028B45B40 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0173FDF94E13F6CD07F056FBAC3AB5 /* Utils+Foundation.swift */; };
-		EE057CB48DB143E7FE012D50E061FB78 /* Pods-IMEPayQRScannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 747E9D1AB93E68EEEBA7BAF6B56B7CD2 /* Pods-IMEPayQRScannerTests-dummy.m */; };
-		EE6B5702C24E996BC8C2B4A1E709351D /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3FB25F45EE04077420874BD247DED /* UInt8+Extension.swift */; };
-		EF7A6708E7738B1AABB8BA481F1F9121 /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396249721583F8C9CAD524CA722B745 /* PBKDF2.swift */; };
-		EFDE453F9C16CF16D1C2D63F3A76A0A2 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48FDC56414E25865B31EAC0EC13FC3 /* CBC.swift */; };
-		F0FB1C7C6C4F4028236FDF02BB7DBE56 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BA3053C24D54F3B8FD96D30373DBDC /* ECB.swift */; };
-		F306754C43971017E3B6200029508299 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121478EE435108204B5DC6E3271DB78 /* Operators.swift */; };
-		F348833F10BE02A20050E57943B1B2AD /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC707DFC71407725047FABC17E23706 /* Poly1305.swift */; };
-		F6AF33C4FCD9F1D4F979FFC935E56921 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A8C9A13144E7EB4562B159F3EC68 /* BatchedCollection.swift */; };
-		F6BC4650B1D355BA709443042ECEDE1C /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DA981C732332FEFD2CA67A01023D4 /* Digest.swift */; };
-		FEF87F5C27F966D98825715C0ABA8465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		04DC97BB259887A951575D9582E843C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */; };
+		106526403D7367B6A4F94EBE32E4E4AF /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB7564D4608A3D4EB11D6DD74125246 /* BlockModeOptions.swift */; };
+		143FD0BD9911520159DE6980DB01621B /* QRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81526F45E1CBE477F41425E9CB72096 /* QRModel.swift */; };
+		15E7B0554118825201203078177E609F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C775C1C8CCC352D04BA1879CD2172D1 /* Utils.swift */; };
+		1811F4666833B95F3A3A7A41553FE860 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB124BFBD4B75F55BDD9F634A386F262 /* DigestType.swift */; };
+		18954FAFCF37859CB1429C94A1F7F910 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B95F92AC8E5E0828138BEC361FDE7CB /* Updatable.swift */; };
+		1B9D7412E49CFDD1CEEB50C00D23F32E /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F75A67865AD2B356948B56D0DB5C18 /* Array+Extension.swift */; };
+		1E99C0DC016663DE25D5BF860E665892 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA01E3282DC6813329BEA35E4604D3A /* Data+Extension.swift */; };
+		20B42EFF78D49D55CE67458F852F3067 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEDCE6097032F41B42B88FE47578660 /* ChaCha20+Foundation.swift */; };
+		28A4701B98A60D931981D3EF697688C3 /* IMEPayQRScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A58C773728BBAAA462E90C380AA5ED8 /* IMEPayQRScanner-dummy.m */; };
+		28ED02C99A15C5A91DCC72212DCB8495 /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4C5E7BAB20D59054526CE066C2F0F0 /* Scanner.storyboard */; };
+		2D81F0A62AE650F954E2419B5B4937F7 /* Pods-ScannerDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C23267D7A9C118C617639A2537D1ED3 /* Pods-ScannerDemoTests-dummy.m */; };
+		2EC465B50B8D924E3E7875A939816EF8 /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C85699927D3ADE8157AA428A4A5460 /* HMAC+Foundation.swift */; };
+		37AB4C5DF3F3CB2D841BC7531D8648C2 /* CSArrayType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121A6C64E30113C851C069773FAA495B /* CSArrayType+Extensions.swift */; };
+		37E62B6249E94BF82879DC9C748CFFDE /* Pods-IMEPayQRScannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F58887F67030ECBBCCDBBDB6FB3F9A8E /* Pods-IMEPayQRScannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39E845C25F08A238FFA942330A6F3B21 /* RandomAccessBlockModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB76C61E7A88A14381D6D4F7E6F888 /* RandomAccessBlockModeWorker.swift */; };
+		3C072678894A386F5608B869DA6305AA /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973FDE8118B1D6055F81F95B4A828142 /* Rabbit.swift */; };
+		3D12487E9EB47DC1D18C93780CCDE557 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0B30E71C12B1384C09243AF30FDCB /* Rabbit+Foundation.swift */; };
+		40C082B18076A24375622A1957448A87 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F009BEE06BE2B7074A98B07039683 /* AES.swift */; };
+		43522EAFE5A8F10A1BAF69FB82EAA63D /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE8A8384C52ECAB66253A62AA62474 /* NoPadding.swift */; };
+		45F170A736E1CA34D5066A84A90C30B2 /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93503B3A1BCE022F5BA5B17F601234 /* BlockCipher.swift */; };
+		4C76DCE3AE5796C3B625CF264E59E28F /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275ECE3992BF464D863432FC9A6D117 /* PCBC.swift */; };
+		4D640F9A6CEEB57B69437404D8F4EC8F /* Pods-ScannerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F8878F408307EA592D86144BA3E18A /* Pods-ScannerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ED037577FE82DA38F06553ABE799D90 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F58EA51D3B942E448D3437E8507E1 /* UInt32+Extension.swift */; };
+		4F656AAED181E78C287FA5DCA68AFA9B /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5975CAFA77E87FA38E2E7182BFE149 /* Blowfish+Foundation.swift */; };
+		50E6CB8BC112C7890E257643ABCC3C87 /* Pods-ScannerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F835539881D223AB68B7D3DAF39BA290 /* Pods-ScannerDemo-dummy.m */; };
+		50EFBCFA2F129D00137F42C06423A6E4 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6215539AEF74694B64BEF94D48FA16 /* QRCodeScannerViewController.swift */; };
+		56FCD8E2F7FAB9F83B7A8417208EECD8 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5C81449B793CF265E07C157B40663A /* CFB.swift */; };
+		5A4C6A852D60A2064A2A4F754815195A /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0262926441FCB087DDF890EEDB255FFD /* CryptoSwift.framework */; };
+		5D6821DE0DC076C4863C4B1FCA7C4FDF /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A65E89C47514B3DD525D52456338D /* OFB.swift */; };
+		5E4965103C3132BAC775E322EBA555FD /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F11634C46554983014BB4D0D09EEA /* Cryptors.swift */; };
+		5E7CF0574ED8D4D3EA07898BC05B9B44 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7E8150C2A8C315D91EFC129BE951E /* Padding.swift */; };
+		6073C82F34939E719D20C6867E4E8C05 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4503D1DD846C31DE759191D22BE9A /* PKCS5.swift */; };
+		64EDCD9A4ADC3B7B9E68FB8945A5BB40 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4933BE3AD930C433FDFAA494BA08F3 /* SecureBytes.swift */; };
+		656A6289582E554537ED419A60BFF4A9 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BEAB457A385A0A73D07BA66046C242 /* Bit.swift */; };
+		690A0944290908B2FBBCEC3F152F1908 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D0A0070CA07982B81FF14A42401DDF /* UInt16+Extension.swift */; };
+		6EE603C900CB0283E968DFCBEA23C0FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */; };
+		6F8A0D50BEDB3DFE1237D4DB40249FD3 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49374EB289098E820B8B0E68605A38D /* OverlayView.swift */; };
+		71648F328FEBCE785B620D5BEB551D62 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D2B95E7BEA12D6D69BDF98D48CA42 /* BlockMode.swift */; };
+		73B55F6A1662A388B52B6CB888DFC9AC /* Pods-IMEPayQRScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5AB5E76AA529B0CCD176D4B38F87D2 /* Pods-IMEPayQRScanner-dummy.m */; };
+		7696FC3BF8CDF62D426C5417190066E7 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F7EDE73015142AC2E05762542D864A /* CryptoSwift-dummy.m */; };
+		7A074562F36E53B3DD5364E31A0DDDB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C249E86D24D0DBD2D1D54C2699551CC /* UIKit.framework */; };
+		7A16649DC486765D9FEA898424704F6B /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E06CFDD201651A13214E09F31660430 /* Generics.swift */; };
+		7AD65022E43713569709834981BFDA7A /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17C61C9CC506F9DD4D0480A48AD434 /* Checksum.swift */; };
+		7D19CB292A3A294C446D7CB1C9F4E72E /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE640E8DEC52A3E95E3E0313E669A3A2 /* CryptoManager.swift */; };
+		7E7A22DFC5711E73CC978DE27312BDF6 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DD69A8770AA2EC48E39DF7F316A33 /* Int+Extension.swift */; };
+		7EDF5930431BFAFABD3F50D1C2E28B63 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C83CB69321290AC2E942D3A994310 /* BaseViewController.swift */; };
+		860FD28776117C83F89951DC3F67D90B /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA74886768DC21061241BA83BB330F3 /* AES+Foundation.swift */; };
+		863A9870C409CC1AD58C307FA5D612C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */; };
+		86916D6AE2D3827309C0A577FB7165E1 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102FAB3DDC36E067F9BDD3C71F8AE60D /* PKCS7Padding.swift */; };
+		8E352C414DA910D82D5F76C40AB39B9B /* BlockModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CC09F7C2F79BD20636E0249DCC6296 /* BlockModeWorker.swift */; };
+		93AE10259A2E5D0D3FC59DE0A6607249 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103D2B791790B8CE3327E800971AB23A /* PKCS7.swift */; };
+		93BA58EEBAF3599949BBE0EEF4A965CA /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38042D09D5E7B7DE8C9F72744982AB4C /* HMAC.swift */; };
+		9AADBF6180E04F4894B5D3398198C5A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */; };
+		9CE20232510EE59FE400A71DF8C3B30F /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6CEE19603836A3B85DD1767C86EB5 /* ZeroPadding.swift */; };
+		9E0501EF4ACF2A0CDC99F9687D84D48B /* Pods-IMEPayQRScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A4D812CEB5EBAB44617656182FEE8A /* Pods-IMEPayQRScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E3271279026C3CCC5DC0EBB430CA6D7 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB58EB87BEF765D051A2D455FFD5AA99 /* Authenticator.swift */; };
+		9F4D524CADB81196102066433C5F6222 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9470466A9E9E793AEC27961EBDEB71E /* Extensions.swift */; };
+		A216025A3D3703E01B9B89D463123E12 /* IC_CLOSE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C29A4D2F022F6B749F29337A73B3FDA0 /* IC_CLOSE@2x.png */; };
+		A5BE6D486BFD2909DE6EB3C6ACDA3B54 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE379EB5C627171CC90A8E648A2A4B65 /* CTR.swift */; };
+		A645E29D79C6313C84D474597DB09634 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB9E550EB45401A950F6EEBDD1C47AB /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7679067C5707DAD74218254B1EA7C0D /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6B69E278F2071884A3F0D81E22310 /* UInt64+Extension.swift */; };
+		AC2CFD20E2921CDEC49CDCE84D5CF831 /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207ACFCE247C38AA095C85BFF1E28D9 /* Blowfish.swift */; };
+		AC9B8C11009653AE3C6A04661B83FAF6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2D4D1BC2B516E310CBFB157F69D7F /* String+Extension.swift */; };
+		AE09CD7C1B9FA65F898F6594BD58D631 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2840AAC251699E0581A60FAA82FF24 /* PBKDF1.swift */; };
+		B163356174AC3904DC6A9E235FFF65AB /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CF5CC86AABF73F95DFE8BA7EF148A /* SHA1.swift */; };
+		C2B49B97085F299A8454F0D1768EADC2 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E45B0D85BAC6E87E56FCDA46A6C19D5 /* SHA2.swift */; };
+		C7D9C8F3927BC62F5DC058A1B5B92E75 /* CSArrayType+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62614DF9DFDC5118804B34509F2E7A5 /* CSArrayType+Foundation.swift */; };
+		CAEFC71A93CF694F456A83564C33D141 /* IMEPayQRScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 797FE327B962F4C58C94591028CA0A9C /* IMEPayQRScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDE744542C0519D2197E5BE2EC02B96B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */; };
+		D129F339808A6D4E20D83BB066141FAF /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1FDBC670172E38F04F127C8414A5D0 /* Collection+Extension.swift */; };
+		D457454E29FB723CD2743D081A4FB68E /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF366B712EC7A0DED0FB37B1C7517715 /* Cipher.swift */; };
+		D8AD5D0AD8DAC7505D464ADA0565809B /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597A19D421FBB6859BCC9FD1353185C1 /* ChaCha20.swift */; };
+		DB850FA175CCE7E0BA25D0EEECDA649E /* Pods-ScannerDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9799F398F4EAC300D27312F5C0B6525D /* Pods-ScannerDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBF91A96B8205236B3CD925D4E876BC9 /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB37A963D40AB5E7390E5EA41EC80E8 /* SHA3.swift */; };
+		DF1740958185D07FA6DE790EBDD52DC9 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A4CBD7142CC73BF6624ED5BC3E5E1 /* MD5.swift */; };
+		E194E816DF8DA6B20CC5961973FBA3E5 /* RandomAccessCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0610BFE330A2FC3B1E6CF576EA969A /* RandomAccessCryptor.swift */; };
+		E2EB7183921492B9ADA301B037A54A78 /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7DF9C7063368B8C8720EDBFBB0292C /* RandomBytesSequence.swift */; };
+		E5DD6F5F4D08EE86AA06CF05DCC01FF1 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736F36B61E4924BD63270B36E910A504 /* String+FoundationExtension.swift */; };
+		E6AFA60AD32A7C7A74B2317028B45B40 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778C80E4AC534154FBE39726A3A34FA /* Utils+Foundation.swift */; };
+		EE057CB48DB143E7FE012D50E061FB78 /* Pods-IMEPayQRScannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF82620C186ECDD75EBBA77FC89475 /* Pods-IMEPayQRScannerTests-dummy.m */; };
+		EE6B5702C24E996BC8C2B4A1E709351D /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E609D421A46DE1921D75373F0FA42C71 /* UInt8+Extension.swift */; };
+		EF7A6708E7738B1AABB8BA481F1F9121 /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5D000F8024A8145DEFD0F4F58A23C /* PBKDF2.swift */; };
+		EFDE453F9C16CF16D1C2D63F3A76A0A2 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51F047F6A2DFBACF80BB67D7FD72B6 /* CBC.swift */; };
+		F0FB1C7C6C4F4028236FDF02BB7DBE56 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865B5712FAA80BB1D7610F0F5AE154C /* ECB.swift */; };
+		F306754C43971017E3B6200029508299 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC84A0290552B8460D935EC4A64A4DC /* Operators.swift */; };
+		F348833F10BE02A20050E57943B1B2AD /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77EC9C26630BD9A71E53B2479E4C337 /* Poly1305.swift */; };
+		F4484CC2AE1D5549EB3155E50E734987 /* IMEPayQRScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F28A18531CFF4A524891C72666C8F45 /* IMEPayQRScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F655D057FC51EC0FC778B37442D009E5 /* IMPScannerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A37B98F2A45707B10CD6A5628F04DF /* IMPScannerCoordinator.swift */; };
+		F6AF33C4FCD9F1D4F979FFC935E56921 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D479189F9AAE0ABAE41BA54E8BD1499 /* BatchedCollection.swift */; };
+		F6BC4650B1D355BA709443042ECEDE1C /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3FE5375C5D6290D14A0CF12BFE8A47 /* Digest.swift */; };
+		FEF87F5C27F966D98825715C0ABA8465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A386F1717E0148FB4C975D262E349F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9B79B1B1B891266BEF4C41807FC69A;
+			remoteInfo = IMEPayQRScanner;
+		};
+		3DC83EB7A36BEB998DD3485C0ECA6395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BB1C1403B2419F911818DA8413FDA07;
+			remoteInfo = CryptoSwift;
+		};
 		53B8FB910EC06EB2324A6E3995B753E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -95,6 +130,20 @@
 			remoteGlobalIDString = 6BB1C1403B2419F911818DA8413FDA07;
 			remoteInfo = CryptoSwift;
 		};
+		B258566BE34989E4002B9F43252CEBAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BB1C1403B2419F911818DA8413FDA07;
+			remoteInfo = CryptoSwift;
+		};
+		D829ED80D584D75E80CBAEFF73F47B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6EA707553D6EF4E12A923E78A3A7FB4;
+			remoteInfo = "Pods-ScannerDemo";
+		};
 		E4BEB8C79CB3CCEC57DC5C0D902E9728 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -105,101 +154,152 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		077193E2774E69BD7E433B4EC38503D3 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
-		0C5FAA471CAC3C2767BD8CBF3AA03826 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DFA02ADDD3AE60A07581AF6C23C57C1 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
-		11286F67F6A7E5EE75331B64466F424F /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
-		11B48C73BC5EC4C4BD434A81F4365217 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS/PKCS5.swift; sourceTree = "<group>"; };
-		14CB8FFA973A3F6E65C8C736969990EE /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
-		1AD36649CEF79E776BE6C42C4D4FFF0E /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
-		1B0173FDF94E13F6CD07F056FBAC3AB5 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
-		22CAAA849F22BE250FB5B005632DA420 /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
-		2514255AE071667670C5DB80ED3DC030 /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
-		268CF3C51C272C160CCD18D689D26AAC /* Pods-IMEPayQRScanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMEPayQRScanner-resources.sh"; sourceTree = "<group>"; };
-		270F8DFE17FD576D8F430CB113410717 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C5241A85EF0689249122D58B12158D6 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
-		2DE03207FE69C4961FB6FC9FF89E2CA1 /* Pods-IMEPayQRScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMEPayQRScanner-acknowledgements.plist"; sourceTree = "<group>"; };
-		2FF042F0DCB9009C34BE77586ED91445 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
-		31DE7CCE7C627DFA964F5EBFCC2E0BC4 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
-		323A39B3C0BCDCF70319C1CADACECE24 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
-		36AAA336943AEBDA2BD10612B8DFEFFE /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
-		378EB019328FA1EE2EDFC6DED5F29127 /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
-		3EB49B9AAA5F1E200C32B0906DFCA7C0 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
-		40642700584A629264830D2D5DC0033F /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
-		4099F300D420CB342B071B11EFE6484B /* BlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/BlockModeWorker.swift; sourceTree = "<group>"; };
-		4892176018D062B80A66778F71DC8D6B /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
-		4A216C6DEBB43A4F984DEDFB600A76D9 /* Pods-IMEPayQRScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		555B8A9BE9F76A956E0570B14D393561 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AC707DFC71407725047FABC17E23706 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
-		652B38AFEDC540741B2D1D1BCCD1A671 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
-		6CC59D75FDB7E7DF823D967F1EB231F9 /* Pods-IMEPayQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScanner.release.xcconfig"; sourceTree = "<group>"; };
-		6FECFE78AA05C108455B1823DC36219C /* Pods_IMEPayQRScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMEPayQRScannerTests.framework; path = "Pods-IMEPayQRScannerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72339619FC8ACB1AF034401FF7880597 /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
-		74266D83533829A3D4AFB2C642CE467B /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
-		747E9D1AB93E68EEEBA7BAF6B56B7CD2 /* Pods-IMEPayQRScannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMEPayQRScannerTests-dummy.m"; sourceTree = "<group>"; };
-		77B697D410FB7D9435B331C98ECC6DE6 /* Pods-IMEPayQRScannerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMEPayQRScannerTests-resources.sh"; sourceTree = "<group>"; };
-		787F1C6A658B1306F3DD1583C693DFB7 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
-		79CDBD9C2B4D04F56985A12BAA34834B /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
-		7B73461C4F8EA6CFD262BBB8A1F89044 /* Pods-IMEPayQRScannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMEPayQRScannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7C60AE4E36280EB8C777BA33E447049B /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
-		7F7C74C1969F07A68E136CB0D73EA22D /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
-		8020E42C8483C99F8FD7F41D6ED34D40 /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
-		8396249721583F8C9CAD524CA722B745 /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
-		84515A81C833165500348126DE2A6942 /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
-		85CFCCCE84FD30436877F59411D68DA9 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
-		8B03D64AB45B25977DB060C04CBDED46 /* Pods_IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMEPayQRScanner.framework; path = "Pods-IMEPayQRScanner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C9857618388B33C80BF5AF0609EB2FA /* Pods-IMEPayQRScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMEPayQRScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8CC3FB25F45EE04077420874BD247DED /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
-		8D18E9456898778AB5B1F8A6AC9E8FA3 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
-		8DC582EDEFA53D225E83DCB01949B014 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
-		8FBCC4B1237BE62485DBB7D15254FE97 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
-		900E6558FE6E49506C508F80F0660EE9 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
-		93893FB75BD3A42D74F5825F5A175CFF /* Pods-IMEPayQRScannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMEPayQRScannerTests-umbrella.h"; sourceTree = "<group>"; };
+		0262926441FCB087DDF890EEDB255FFD /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		078F009BEE06BE2B7074A98B07039683 /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
+		0BA4503D1DD846C31DE759191D22BE9A /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS/PKCS5.swift; sourceTree = "<group>"; };
+		0C249E86D24D0DBD2D1D54C2699551CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0D479189F9AAE0ABAE41BA54E8BD1499 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
+		102FAB3DDC36E067F9BDD3C71F8AE60D /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
+		103D2B791790B8CE3327E800971AB23A /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
+		1043208EF38DBB0BC66C0D0BEEC7F3F1 /* Pods-IMEPayQRScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMEPayQRScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		108FC390FB950785F5470774AF7299EA /* Pods-ScannerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScannerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		121A6C64E30113C851C069773FAA495B /* CSArrayType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Extensions.swift"; path = "Sources/CryptoSwift/CSArrayType+Extensions.swift"; sourceTree = "<group>"; };
+		16311463B4C60C470A8B06637D334218 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
+		16553329219A5480E65386886EEA5F00 /* Pods-IMEPayQRScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMEPayQRScanner.modulemap"; sourceTree = "<group>"; };
+		171DE3ED6DD4A04A76A92D4AA51693F7 /* Pods-ScannerDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScannerDemoTests.modulemap"; sourceTree = "<group>"; };
+		1B00FA9F88DEB700E6843B808C99107D /* Pods-IMEPayQRScannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMEPayQRScannerTests.modulemap"; sourceTree = "<group>"; };
+		1C775C1C8CCC352D04BA1879CD2172D1 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		1EDE8A8384C52ECAB66253A62AA62474 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
+		21F8878F408307EA592D86144BA3E18A /* Pods-ScannerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScannerDemo-umbrella.h"; sourceTree = "<group>"; };
+		22D6CEE19603836A3B85DD1767C86EB5 /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
+		23BEAB457A385A0A73D07BA66046C242 /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
+		2675D63570CEF0B8B97EF0499387F585 /* Pods-IMEPayQRScannerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMEPayQRScannerTests-frameworks.sh"; sourceTree = "<group>"; };
+		27CC09F7C2F79BD20636E0249DCC6296 /* BlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/BlockModeWorker.swift; sourceTree = "<group>"; };
+		27DE7C0AE4326A88FB313E402FBDB4DE /* Pods-ScannerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScannerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AA5D72A6AA3A5702CF74961B5351096 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
+		2ACCFD8C4CB459293554147EB7031B81 /* Pods-ScannerDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScannerDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B4C5E7BAB20D59054526CE066C2F0F0 /* Scanner.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Scanner.storyboard; path = IMEPayQRScanner/Scanner.storyboard; sourceTree = "<group>"; };
+		3001DE03CF977DF13179C1F6DEB9CD3F /* Pods-ScannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3778C80E4AC534154FBE39726A3A34FA /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
+		38042D09D5E7B7DE8C9F72744982AB4C /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
+		3865B5712FAA80BB1D7610F0F5AE154C /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
+		3AB7564D4608A3D4EB11D6DD74125246 /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
+		3B8CF5CC86AABF73F95DFE8BA7EF148A /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
+		3C241946B5661D0C39FD52CBA58B31E1 /* Pods-IMEPayQRScannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMEPayQRScannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3C3FE5375C5D6290D14A0CF12BFE8A47 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
+		3C5C81449B793CF265E07C157B40663A /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
+		3D889D4F1E7CED9D38AA79666C7FE2A0 /* Pods-ScannerDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScannerDemoTests-resources.sh"; sourceTree = "<group>"; };
+		3E06CFDD201651A13214E09F31660430 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		3E7B88434F5E3E61EF293D9A09B66113 /* Pods_ScannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScannerDemo.framework; path = "Pods-ScannerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427BCCDB54E32BC6517C42A2FF54966C /* Pods-ScannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScannerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		43253B06FE4DC3E1C51E97F5216DEA78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CD45F7703FF5902BBA7DA9C4986B23 /* Pods-ScannerDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScannerDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		4A58C773728BBAAA462E90C380AA5ED8 /* IMEPayQRScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMEPayQRScanner-dummy.m"; sourceTree = "<group>"; };
+		4BA74886768DC21061241BA83BB330F3 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
+		4BCDC31DCB0CC892B1A9CF5C2B508D22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7C12D358E46C5B779E657C5650568C /* IMEPayQRScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMEPayQRScanner-prefix.pch"; sourceTree = "<group>"; };
+		4F28A18531CFF4A524891C72666C8F45 /* IMEPayQRScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMEPayQRScanner-umbrella.h"; sourceTree = "<group>"; };
+		5713ADEDA6D911A0E2E2FC42D7D1BD30 /* IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IMEPayQRScanner.framework; path = IMEPayQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		597A19D421FBB6859BCC9FD1353185C1 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
+		5B95F92AC8E5E0828138BEC361FDE7CB /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
+		5BC77A7349899DD95515B8BF0918A980 /* Pods-IMEPayQRScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D00989BC897E60CD272AE756138E0AC /* Pods-ScannerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScannerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E51F047F6A2DFBACF80BB67D7FD72B6 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
+		5E5AB5E76AA529B0CCD176D4B38F87D2 /* Pods-IMEPayQRScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMEPayQRScanner-dummy.m"; sourceTree = "<group>"; };
+		602F37ACFB037D7B0E12F2EC41B34961 /* Pods-ScannerDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScannerDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		643E16B76B6E489863C0DFCC581505A4 /* Pods-ScannerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScannerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67A4D812CEB5EBAB44617656182FEE8A /* Pods-IMEPayQRScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMEPayQRScanner-umbrella.h"; sourceTree = "<group>"; };
+		6937872E43B402B130E2E80BF7C3D0F5 /* Pods_ScannerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScannerDemoTests.framework; path = "Pods-ScannerDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D6B69E278F2071884A3F0D81E22310 /* UInt64+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt64+Extension.swift"; path = "Sources/CryptoSwift/UInt64+Extension.swift"; sourceTree = "<group>"; };
+		6A17C61C9CC506F9DD4D0480A48AD434 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
+		6F0610BFE330A2FC3B1E6CF576EA969A /* RandomAccessCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessCryptor.swift; path = Sources/CryptoSwift/RandomAccessCryptor.swift; sourceTree = "<group>"; };
+		736F36B61E4924BD63270B36E910A504 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		74D2ADC231B6A4BB4404828396F28697 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		766F11634C46554983014BB4D0D09EEA /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
+		7970E0F0F28B8E479BD6C8BEEE5743A7 /* Pods-IMEPayQRScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		797FE327B962F4C58C94591028CA0A9C /* IMEPayQRScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMEPayQRScanner.h; path = IMEPayQRScanner/IMEPayQRScanner.h; sourceTree = "<group>"; };
+		79C85699927D3ADE8157AA428A4A5460 /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
+		7ABDAB93BF6A6F55FD82F4E73C9FCAD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC84A0290552B8460D935EC4A64A4DC /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
+		7BF421A55424B267BEB8FDABB4823F12 /* IMEPayQRScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMEPayQRScanner.xcconfig; sourceTree = "<group>"; };
+		7C23267D7A9C118C617639A2537D1ED3 /* Pods-ScannerDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScannerDemoTests-dummy.m"; sourceTree = "<group>"; };
+		7DABF636F2DB5C2D4F55DC3D49268215 /* Pods_IMEPayQRScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMEPayQRScannerTests.framework; path = "Pods-IMEPayQRScannerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1FDBC670172E38F04F127C8414A5D0 /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
+		81CF82620C186ECDD75EBBA77FC89475 /* Pods-IMEPayQRScannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMEPayQRScannerTests-dummy.m"; sourceTree = "<group>"; };
+		822B1C0BBCC143F89ECA8949AAF1BEAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85CEB18A3517793C32AA6BA4654AFD10 /* Pods_IMEPayQRScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMEPayQRScanner.framework; path = "Pods-IMEPayQRScanner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE45C56B11CCE9AECEDEF6B5FD37927 /* IMEPayQRScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IMEPayQRScanner.modulemap; sourceTree = "<group>"; };
+		8C6215539AEF74694B64BEF94D48FA16 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeScannerViewController.swift; path = IMEPayQRScanner/QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		8E6D2B95E7BEA12D6D69BDF98D48CA42 /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockMode.swift; path = Sources/CryptoSwift/BlockMode/BlockMode.swift; sourceTree = "<group>"; };
+		8FA01E3282DC6813329BEA35E4604D3A /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		998BB22BE19766789D190E239EA4671C /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
-		9B3818F541D7E2AF74FB98D6F879D7FB /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
-		9BC8030396BA103AB7092AC6CD83588E /* CSArrayType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Extensions.swift"; path = "Sources/CryptoSwift/CSArrayType+Extensions.swift"; sourceTree = "<group>"; };
-		9DBAA9CC337996FB59EC8C497381F41D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A16E8C08D9647DE8C7C5DEE702672C55 /* Pods-IMEPayQRScannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMEPayQRScannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A1B3A8C9A13144E7EB4562B159F3EC68 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
-		A2BD4C9E85C7A28932A0A7C7F63E5431 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
-		AA3DA981C732332FEFD2CA67A01023D4 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
-		AB5964E02C249C20576FB2937D7FADF1 /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockMode.swift; path = Sources/CryptoSwift/BlockMode/BlockMode.swift; sourceTree = "<group>"; };
-		AC38E9E757F2C1825B4EFC28202EAF50 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
-		AD3DBF2069E2A594145B40FEDB8A679B /* Pods-IMEPayQRScannerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMEPayQRScannerTests-frameworks.sh"; sourceTree = "<group>"; };
-		AF3A063028D8CDDB163B2AFE5CE90516 /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
-		B1F734FC105583DE2FBA9FD469EA6E53 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
-		B658E9E122BD5C1AFEEE9DC0F2357CC0 /* Pods-IMEPayQRScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScanner.debug.xcconfig"; sourceTree = "<group>"; };
-		B945665992F29227492B5A277CFD13F4 /* Pods-IMEPayQRScannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMEPayQRScannerTests.modulemap"; sourceTree = "<group>"; };
-		BACF0144DAEBE5E39A3DB94CBB432B75 /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
-		BBADFB7F3EF39C54AF6CCBD2824A337A /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
-		BC3FE8F0B53146E5D03AC4F654501916 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
-		C03C6F639996A90ECAD26F3842E876C3 /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Sources/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
-		CBAF00A68D437D136B6D958CB8472897 /* Pods-IMEPayQRScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMEPayQRScanner-dummy.m"; sourceTree = "<group>"; };
-		CC48FDC56414E25865B31EAC0EC13FC3 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
-		CD875EC99134EC318AB0797BB9D25592 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
-		DA30689D1C2A6D02E1CBDE08787EBFEC /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
-		E00CB69EBEB58321B3FDB7AC5CBEBF50 /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
-		E121478EE435108204B5DC6E3271DB78 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
-		E231D7BF23222EBCF5D9DF19FE801FF0 /* Pods-IMEPayQRScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScannerTests.release.xcconfig"; sourceTree = "<group>"; };
-		E34CF75CD89668098013221990FCA95E /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
-		E47886A948E2CEB7366370B85FD313B8 /* RandomAccessBlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessBlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/RandomAccessBlockModeWorker.swift; sourceTree = "<group>"; };
-		E493429ADC58C3DDB8DD3207A24B5829 /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF1.swift; path = Sources/CryptoSwift/PKCS/PBKDF1.swift; sourceTree = "<group>"; };
-		E7401ECFD930087D7F39D497E911D378 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
-		E7992A0E17886E4E553034DD6D2549A3 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAB6701250EFAA12659A68C3526390E0 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
-		F004B39A45A76D44DF4A3719DBAA5B2E /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
-		F0BA3053C24D54F3B8FD96D30373DBDC /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
-		F0F5EBDDAB166AC1A4452F4C6377E3A4 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
-		F2F9D732A876AC54B491F8B76159666A /* Pods-IMEPayQRScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMEPayQRScanner.modulemap"; sourceTree = "<group>"; };
-		F35813F892718354D75B6FD88D049E13 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
-		FA028689C8364D68AD70CAF0C2D9E0B0 /* RandomAccessCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessCryptor.swift; path = Sources/CryptoSwift/RandomAccessCryptor.swift; sourceTree = "<group>"; };
-		FE17F52E6A54308751FDC439CB9FF595 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
-		FEE21DD43DA885EB5130AFDAE86DC36C /* Pods-IMEPayQRScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMEPayQRScanner-umbrella.h"; sourceTree = "<group>"; };
+		97157362D5397D777FEFAAB6060FFB21 /* Pods-IMEPayQRScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMEPayQRScanner-acknowledgements.plist"; sourceTree = "<group>"; };
+		973FDE8118B1D6055F81F95B4A828142 /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
+		9799F398F4EAC300D27312F5C0B6525D /* Pods-ScannerDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScannerDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		9A5975CAFA77E87FA38E2E7182BFE149 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		9C5C83CB69321290AC2E942D3A994310 /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = IMEPayQRScanner/BaseViewController.swift; sourceTree = "<group>"; };
+		9CF5D000F8024A8145DEFD0F4F58A23C /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
+		9D93503B3A1BCE022F5BA5B17F601234 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
+		9E45B0D85BAC6E87E56FCDA46A6C19D5 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
+		9EB37A963D40AB5E7390E5EA41EC80E8 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
+		A49374EB289098E820B8B0E68605A38D /* OverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = IMEPayQRScanner/OverlayView.swift; sourceTree = "<group>"; };
+		A7F8F61B58714672892ED9A8E15D3358 /* Pods-IMEPayQRScanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMEPayQRScanner-resources.sh"; sourceTree = "<group>"; };
+		ABB9E550EB45401A950F6EEBDD1C47AB /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
+		AEDB76C61E7A88A14381D6D4F7E6F888 /* RandomAccessBlockModeWorker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessBlockModeWorker.swift; path = Sources/CryptoSwift/BlockMode/RandomAccessBlockModeWorker.swift; sourceTree = "<group>"; };
+		B12A4CBD7142CC73BF6624ED5BC3E5E1 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
+		B1D0A0070CA07982B81FF14A42401DDF /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
+		B62614DF9DFDC5118804B34509F2E7A5 /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
+		B77EC9C26630BD9A71E53B2479E4C337 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
+		B9B2D37D4599228E847EFD7E8174091E /* Pods-IMEPayQRScannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMEPayQRScannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA73D60FD7B0651F45F8CBFBDD0D1441 /* Pods-IMEPayQRScannerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMEPayQRScannerTests-resources.sh"; sourceTree = "<group>"; };
+		BB2840AAC251699E0581A60FAA82FF24 /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF1.swift; path = Sources/CryptoSwift/PKCS/PBKDF1.swift; sourceTree = "<group>"; };
+		BDA977C3B80F53F62EA7B713B46264D5 /* Pods-ScannerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScannerDemo-resources.sh"; sourceTree = "<group>"; };
+		BDEDCE6097032F41B42B88FE47578660 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		BE640E8DEC52A3E95E3E0313E669A3A2 /* CryptoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoManager.swift; path = IMEPayQRScanner/CryptoManager.swift; sourceTree = "<group>"; };
+		BF4F58EA51D3B942E448D3437E8507E1 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
+		C10F381A316C6C3C9AF6D8A69839E64E /* Pods-ScannerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScannerDemo.modulemap"; sourceTree = "<group>"; };
+		C1F75A67865AD2B356948B56D0DB5C18 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
+		C207ACFCE247C38AA095C85BFF1E28D9 /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
+		C29A4D2F022F6B749F29337A73B3FDA0 /* IC_CLOSE@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "IC_CLOSE@2x.png"; path = "IMEPayQRScanner/IC_CLOSE@2x.png"; sourceTree = "<group>"; };
+		C2B0B30E71C12B1384C09243AF30FDCB /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		CB45C6F910DD08B875D3988FEC41314A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB58EB87BEF765D051A2D455FFD5AA99 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
+		CBC5B018D84036220CFB377C1F4AC4B9 /* Pods-IMEPayQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScanner.release.xcconfig"; sourceTree = "<group>"; };
+		CC2DD69A8770AA2EC48E39DF7F316A33 /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Sources/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
+		CF366B712EC7A0DED0FB37B1C7517715 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
+		D02DC663F0BC6EDDD0180EC346F1E33E /* Pods-ScannerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScannerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		D1A7E8150C2A8C315D91EFC129BE951E /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
+		DD4933BE3AD930C433FDFAA494BA08F3 /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
+		DE7DF9C7063368B8C8720EDBFBB0292C /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
+		E38DCE7C7410B1CAA2006F9471592FD4 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A37B98F2A45707B10CD6A5628F04DF /* IMPScannerCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMPScannerCoordinator.swift; path = IMEPayQRScanner/IMPScannerCoordinator.swift; sourceTree = "<group>"; };
+		E609D421A46DE1921D75373F0FA42C71 /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
+		E74A65E89C47514B3DD525D52456338D /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
+		E81526F45E1CBE477F41425E9CB72096 /* QRModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRModel.swift; path = IMEPayQRScanner/QRModel.swift; sourceTree = "<group>"; };
+		E9470466A9E9E793AEC27961EBDEB71E /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = IMEPayQRScanner/Extensions.swift; sourceTree = "<group>"; };
+		EBE2D4D1BC2B516E310CBFB157F69D7F /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		EE379EB5C627171CC90A8E648A2A4B65 /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
+		F275ECE3992BF464D863432FC9A6D117 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
+		F58887F67030ECBBCCDBBDB6FB3F9A8E /* Pods-IMEPayQRScannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMEPayQRScannerTests-umbrella.h"; sourceTree = "<group>"; };
+		F7F7EDE73015142AC2E05762542D864A /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
+		F835539881D223AB68B7D3DAF39BA290 /* Pods-ScannerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScannerDemo-dummy.m"; sourceTree = "<group>"; };
+		FB124BFBD4B75F55BDD9F634A386F262 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		FC55123B15AC69869652B822A8A6FBA5 /* Pods-IMEPayQRScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMEPayQRScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		FEB097A3B08D3C54845A6561C706B249 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		068D50C4EE9A13B1841C4874CCA94650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4C6A852D60A2064A2A4F754815195A /* CryptoSwift.framework in Frameworks */,
+				6EE603C900CB0283E968DFCBEA23C0FB /* Foundation.framework in Frameworks */,
+				7A074562F36E53B3DD5364E31A0DDDB9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FA7355DA1326CB582A782C8383000CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +316,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5331005D0CEEDE709EACD2A306A7934B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC97BB259887A951575D9582E843C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF00E41693A7312DFC91D1F62B7E8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863A9870C409CC1AD58C307FA5D612C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D06808E7550BBA13922344ED95D42FA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,183 +343,276 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48D6B08F13CE5CDA44CAF62BB9E3A277 /* Support Files */ = {
+		06108289BBB1C8AD38CAD0D85ED50D6B /* Pods-IMEPayQRScanner */ = {
 			isa = PBXGroup;
 			children = (
-				998BB22BE19766789D190E239EA4671C /* CryptoSwift.modulemap */,
-				40642700584A629264830D2D5DC0033F /* CryptoSwift.xcconfig */,
-				4892176018D062B80A66778F71DC8D6B /* CryptoSwift-dummy.m */,
-				900E6558FE6E49506C508F80F0660EE9 /* CryptoSwift-prefix.pch */,
-				652B38AFEDC540741B2D1D1BCCD1A671 /* CryptoSwift-umbrella.h */,
-				270F8DFE17FD576D8F430CB113410717 /* Info.plist */,
+				7ABDAB93BF6A6F55FD82F4E73C9FCAD1 /* Info.plist */,
+				16553329219A5480E65386886EEA5F00 /* Pods-IMEPayQRScanner.modulemap */,
+				1043208EF38DBB0BC66C0D0BEEC7F3F1 /* Pods-IMEPayQRScanner-acknowledgements.markdown */,
+				97157362D5397D777FEFAAB6060FFB21 /* Pods-IMEPayQRScanner-acknowledgements.plist */,
+				5E5AB5E76AA529B0CCD176D4B38F87D2 /* Pods-IMEPayQRScanner-dummy.m */,
+				A7F8F61B58714672892ED9A8E15D3358 /* Pods-IMEPayQRScanner-resources.sh */,
+				67A4D812CEB5EBAB44617656182FEE8A /* Pods-IMEPayQRScanner-umbrella.h */,
+				FC55123B15AC69869652B822A8A6FBA5 /* Pods-IMEPayQRScanner.debug.xcconfig */,
+				CBC5B018D84036220CFB377C1F4AC4B9 /* Pods-IMEPayQRScanner.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CryptoSwift";
+			name = "Pods-IMEPayQRScanner";
+			path = "Target Support Files/Pods-IMEPayQRScanner";
 			sourceTree = "<group>";
 		};
-		4B72307847228024D158496EF8FCCA80 /* CryptoSwift */ = {
+		28582EEF0324CAD0BB22F9CC1925D593 /* Pods-ScannerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				7C60AE4E36280EB8C777BA33E447049B /* AES.swift */,
-				14CB8FFA973A3F6E65C8C736969990EE /* AES+Foundation.swift */,
-				F004B39A45A76D44DF4A3719DBAA5B2E /* Array+Extension.swift */,
-				A2BD4C9E85C7A28932A0A7C7F63E5431 /* Authenticator.swift */,
-				A1B3A8C9A13144E7EB4562B159F3EC68 /* BatchedCollection.swift */,
-				378EB019328FA1EE2EDFC6DED5F29127 /* Bit.swift */,
-				0DFA02ADDD3AE60A07581AF6C23C57C1 /* BlockCipher.swift */,
-				AB5964E02C249C20576FB2937D7FADF1 /* BlockMode.swift */,
-				8020E42C8483C99F8FD7F41D6ED34D40 /* BlockModeOptions.swift */,
-				4099F300D420CB342B071B11EFE6484B /* BlockModeWorker.swift */,
-				E00CB69EBEB58321B3FDB7AC5CBEBF50 /* Blowfish.swift */,
-				EAB6701250EFAA12659A68C3526390E0 /* Blowfish+Foundation.swift */,
-				CC48FDC56414E25865B31EAC0EC13FC3 /* CBC.swift */,
-				7F7C74C1969F07A68E136CB0D73EA22D /* CFB.swift */,
-				AC38E9E757F2C1825B4EFC28202EAF50 /* ChaCha20.swift */,
-				787F1C6A658B1306F3DD1583C693DFB7 /* ChaCha20+Foundation.swift */,
-				3EB49B9AAA5F1E200C32B0906DFCA7C0 /* Checksum.swift */,
-				8FBCC4B1237BE62485DBB7D15254FE97 /* Cipher.swift */,
-				22CAAA849F22BE250FB5B005632DA420 /* Collection+Extension.swift */,
-				72339619FC8ACB1AF034401FF7880597 /* Cryptors.swift */,
-				9BC8030396BA103AB7092AC6CD83588E /* CSArrayType+Extensions.swift */,
-				2514255AE071667670C5DB80ED3DC030 /* CSArrayType+Foundation.swift */,
-				BACF0144DAEBE5E39A3DB94CBB432B75 /* CTR.swift */,
-				E7401ECFD930087D7F39D497E911D378 /* Data+Extension.swift */,
-				AA3DA981C732332FEFD2CA67A01023D4 /* Digest.swift */,
-				B1F734FC105583DE2FBA9FD469EA6E53 /* DigestType.swift */,
-				F0BA3053C24D54F3B8FD96D30373DBDC /* ECB.swift */,
-				BC3FE8F0B53146E5D03AC4F654501916 /* Generics.swift */,
-				555B8A9BE9F76A956E0570B14D393561 /* HMAC.swift */,
-				1AD36649CEF79E776BE6C42C4D4FFF0E /* HMAC+Foundation.swift */,
-				C03C6F639996A90ECAD26F3842E876C3 /* Int+Extension.swift */,
-				E34CF75CD89668098013221990FCA95E /* MD5.swift */,
-				FE17F52E6A54308751FDC439CB9FF595 /* NoPadding.swift */,
-				BBADFB7F3EF39C54AF6CCBD2824A337A /* OFB.swift */,
-				E121478EE435108204B5DC6E3271DB78 /* Operators.swift */,
-				8D18E9456898778AB5B1F8A6AC9E8FA3 /* Padding.swift */,
-				E493429ADC58C3DDB8DD3207A24B5829 /* PBKDF1.swift */,
-				8396249721583F8C9CAD524CA722B745 /* PBKDF2.swift */,
-				F35813F892718354D75B6FD88D049E13 /* PCBC.swift */,
-				11B48C73BC5EC4C4BD434A81F4365217 /* PKCS5.swift */,
-				79CDBD9C2B4D04F56985A12BAA34834B /* PKCS7.swift */,
-				11286F67F6A7E5EE75331B64466F424F /* PKCS7Padding.swift */,
-				5AC707DFC71407725047FABC17E23706 /* Poly1305.swift */,
-				84515A81C833165500348126DE2A6942 /* Rabbit.swift */,
-				36AAA336943AEBDA2BD10612B8DFEFFE /* Rabbit+Foundation.swift */,
-				E47886A948E2CEB7366370B85FD313B8 /* RandomAccessBlockModeWorker.swift */,
-				FA028689C8364D68AD70CAF0C2D9E0B0 /* RandomAccessCryptor.swift */,
-				AF3A063028D8CDDB163B2AFE5CE90516 /* RandomBytesSequence.swift */,
-				CD875EC99134EC318AB0797BB9D25592 /* SecureBytes.swift */,
-				2FF042F0DCB9009C34BE77586ED91445 /* SHA1.swift */,
-				2C5241A85EF0689249122D58B12158D6 /* SHA2.swift */,
-				8DC582EDEFA53D225E83DCB01949B014 /* SHA3.swift */,
-				F0F5EBDDAB166AC1A4452F4C6377E3A4 /* String+Extension.swift */,
-				DA30689D1C2A6D02E1CBDE08787EBFEC /* String+FoundationExtension.swift */,
-				9B3818F541D7E2AF74FB98D6F879D7FB /* UInt16+Extension.swift */,
-				74266D83533829A3D4AFB2C642CE467B /* UInt32+Extension.swift */,
-				077193E2774E69BD7E433B4EC38503D3 /* UInt64+Extension.swift */,
-				8CC3FB25F45EE04077420874BD247DED /* UInt8+Extension.swift */,
-				323A39B3C0BCDCF70319C1CADACECE24 /* Updatable.swift */,
-				85CFCCCE84FD30436877F59411D68DA9 /* Utils.swift */,
-				1B0173FDF94E13F6CD07F056FBAC3AB5 /* Utils+Foundation.swift */,
-				31DE7CCE7C627DFA964F5EBFCC2E0BC4 /* ZeroPadding.swift */,
-				48D6B08F13CE5CDA44CAF62BB9E3A277 /* Support Files */,
+				FEB097A3B08D3C54845A6561C706B249 /* Info.plist */,
+				171DE3ED6DD4A04A76A92D4AA51693F7 /* Pods-ScannerDemoTests.modulemap */,
+				602F37ACFB037D7B0E12F2EC41B34961 /* Pods-ScannerDemoTests-acknowledgements.markdown */,
+				2ACCFD8C4CB459293554147EB7031B81 /* Pods-ScannerDemoTests-acknowledgements.plist */,
+				7C23267D7A9C118C617639A2537D1ED3 /* Pods-ScannerDemoTests-dummy.m */,
+				43CD45F7703FF5902BBA7DA9C4986B23 /* Pods-ScannerDemoTests-frameworks.sh */,
+				3D889D4F1E7CED9D38AA79666C7FE2A0 /* Pods-ScannerDemoTests-resources.sh */,
+				9799F398F4EAC300D27312F5C0B6525D /* Pods-ScannerDemoTests-umbrella.h */,
+				108FC390FB950785F5470774AF7299EA /* Pods-ScannerDemoTests.debug.xcconfig */,
+				5D00989BC897E60CD272AE756138E0AC /* Pods-ScannerDemoTests.release.xcconfig */,
 			);
-			name = CryptoSwift;
-			path = CryptoSwift;
+			name = "Pods-ScannerDemoTests";
+			path = "Target Support Files/Pods-ScannerDemoTests";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		4C2D7AEAFA79EFFE5822B5674F5E2558 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				C29A4D2F022F6B749F29337A73B3FDA0 /* IC_CLOSE@2x.png */,
+				2B4C5E7BAB20D59054526CE066C2F0F0 /* Scanner.storyboard */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		6E5266B590038DE008FF8111FB0432D1 /* Targets Support Files */ = {
+		5D4A2F16FAB7F0BE1A5F01E406F516E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FD310625CBAD79EE358299C170E20543 /* Pods-IMEPayQRScanner */,
-				B1231953EFA12E45E3ED335BB4092B9F /* Pods-IMEPayQRScannerTests */,
+				A622280E2B0D1A945817C0D01B21373D /* CryptoSwift */,
+				A62B577B2D8C410E8B08049511EBB575 /* IMEPayQRScanner */,
 			);
-			name = "Targets Support Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F7BF7C3D0A8C9B2E2A861ED5EDA72961 /* Pods */,
-				FC4A0325829BBE34380FCC299E1D8A8A /* Products */,
-				6E5266B590038DE008FF8111FB0432D1 /* Targets Support Files */,
+				F794E514E1311EE65F6A2AF329F0CDFA /* Frameworks */,
+				5D4A2F16FAB7F0BE1A5F01E406F516E7 /* Pods */,
+				EF14D6C5E42505B9BC2E6E13E041CEF2 /* Products */,
+				8F6FD75FE07D29A7F95D231A0650AEE5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B1231953EFA12E45E3ED335BB4092B9F /* Pods-IMEPayQRScannerTests */ = {
+		8F6FD75FE07D29A7F95D231A0650AEE5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DBAA9CC337996FB59EC8C497381F41D /* Info.plist */,
-				B945665992F29227492B5A277CFD13F4 /* Pods-IMEPayQRScannerTests.modulemap */,
-				7B73461C4F8EA6CFD262BBB8A1F89044 /* Pods-IMEPayQRScannerTests-acknowledgements.markdown */,
-				A16E8C08D9647DE8C7C5DEE702672C55 /* Pods-IMEPayQRScannerTests-acknowledgements.plist */,
-				747E9D1AB93E68EEEBA7BAF6B56B7CD2 /* Pods-IMEPayQRScannerTests-dummy.m */,
-				AD3DBF2069E2A594145B40FEDB8A679B /* Pods-IMEPayQRScannerTests-frameworks.sh */,
-				77B697D410FB7D9435B331C98ECC6DE6 /* Pods-IMEPayQRScannerTests-resources.sh */,
-				93893FB75BD3A42D74F5825F5A175CFF /* Pods-IMEPayQRScannerTests-umbrella.h */,
-				4A216C6DEBB43A4F984DEDFB600A76D9 /* Pods-IMEPayQRScannerTests.debug.xcconfig */,
-				E231D7BF23222EBCF5D9DF19FE801FF0 /* Pods-IMEPayQRScannerTests.release.xcconfig */,
+				06108289BBB1C8AD38CAD0D85ED50D6B /* Pods-IMEPayQRScanner */,
+				EF6066D859083CE3CD5D66AEBA456B4F /* Pods-IMEPayQRScannerTests */,
+				9E43619F9AACA9992EFEE611EF01A233 /* Pods-ScannerDemo */,
+				28582EEF0324CAD0BB22F9CC1925D593 /* Pods-ScannerDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9CA4C6696405752CCB3B389AECDE724A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				04848BFCFF0BE7B85331180A27265834 /* Foundation.framework */,
+				0C249E86D24D0DBD2D1D54C2699551CC /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9E43619F9AACA9992EFEE611EF01A233 /* Pods-ScannerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB45C6F910DD08B875D3988FEC41314A /* Info.plist */,
+				C10F381A316C6C3C9AF6D8A69839E64E /* Pods-ScannerDemo.modulemap */,
+				643E16B76B6E489863C0DFCC581505A4 /* Pods-ScannerDemo-acknowledgements.markdown */,
+				27DE7C0AE4326A88FB313E402FBDB4DE /* Pods-ScannerDemo-acknowledgements.plist */,
+				F835539881D223AB68B7D3DAF39BA290 /* Pods-ScannerDemo-dummy.m */,
+				D02DC663F0BC6EDDD0180EC346F1E33E /* Pods-ScannerDemo-frameworks.sh */,
+				BDA977C3B80F53F62EA7B713B46264D5 /* Pods-ScannerDemo-resources.sh */,
+				21F8878F408307EA592D86144BA3E18A /* Pods-ScannerDemo-umbrella.h */,
+				3001DE03CF977DF13179C1F6DEB9CD3F /* Pods-ScannerDemo.debug.xcconfig */,
+				427BCCDB54E32BC6517C42A2FF54966C /* Pods-ScannerDemo.release.xcconfig */,
+			);
+			name = "Pods-ScannerDemo";
+			path = "Target Support Files/Pods-ScannerDemo";
+			sourceTree = "<group>";
+		};
+		A622280E2B0D1A945817C0D01B21373D /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				078F009BEE06BE2B7074A98B07039683 /* AES.swift */,
+				4BA74886768DC21061241BA83BB330F3 /* AES+Foundation.swift */,
+				C1F75A67865AD2B356948B56D0DB5C18 /* Array+Extension.swift */,
+				CB58EB87BEF765D051A2D455FFD5AA99 /* Authenticator.swift */,
+				0D479189F9AAE0ABAE41BA54E8BD1499 /* BatchedCollection.swift */,
+				23BEAB457A385A0A73D07BA66046C242 /* Bit.swift */,
+				9D93503B3A1BCE022F5BA5B17F601234 /* BlockCipher.swift */,
+				8E6D2B95E7BEA12D6D69BDF98D48CA42 /* BlockMode.swift */,
+				3AB7564D4608A3D4EB11D6DD74125246 /* BlockModeOptions.swift */,
+				27CC09F7C2F79BD20636E0249DCC6296 /* BlockModeWorker.swift */,
+				C207ACFCE247C38AA095C85BFF1E28D9 /* Blowfish.swift */,
+				9A5975CAFA77E87FA38E2E7182BFE149 /* Blowfish+Foundation.swift */,
+				5E51F047F6A2DFBACF80BB67D7FD72B6 /* CBC.swift */,
+				3C5C81449B793CF265E07C157B40663A /* CFB.swift */,
+				597A19D421FBB6859BCC9FD1353185C1 /* ChaCha20.swift */,
+				BDEDCE6097032F41B42B88FE47578660 /* ChaCha20+Foundation.swift */,
+				6A17C61C9CC506F9DD4D0480A48AD434 /* Checksum.swift */,
+				CF366B712EC7A0DED0FB37B1C7517715 /* Cipher.swift */,
+				7F1FDBC670172E38F04F127C8414A5D0 /* Collection+Extension.swift */,
+				766F11634C46554983014BB4D0D09EEA /* Cryptors.swift */,
+				121A6C64E30113C851C069773FAA495B /* CSArrayType+Extensions.swift */,
+				B62614DF9DFDC5118804B34509F2E7A5 /* CSArrayType+Foundation.swift */,
+				EE379EB5C627171CC90A8E648A2A4B65 /* CTR.swift */,
+				8FA01E3282DC6813329BEA35E4604D3A /* Data+Extension.swift */,
+				3C3FE5375C5D6290D14A0CF12BFE8A47 /* Digest.swift */,
+				FB124BFBD4B75F55BDD9F634A386F262 /* DigestType.swift */,
+				3865B5712FAA80BB1D7610F0F5AE154C /* ECB.swift */,
+				3E06CFDD201651A13214E09F31660430 /* Generics.swift */,
+				38042D09D5E7B7DE8C9F72744982AB4C /* HMAC.swift */,
+				79C85699927D3ADE8157AA428A4A5460 /* HMAC+Foundation.swift */,
+				CC2DD69A8770AA2EC48E39DF7F316A33 /* Int+Extension.swift */,
+				B12A4CBD7142CC73BF6624ED5BC3E5E1 /* MD5.swift */,
+				1EDE8A8384C52ECAB66253A62AA62474 /* NoPadding.swift */,
+				E74A65E89C47514B3DD525D52456338D /* OFB.swift */,
+				7BC84A0290552B8460D935EC4A64A4DC /* Operators.swift */,
+				D1A7E8150C2A8C315D91EFC129BE951E /* Padding.swift */,
+				BB2840AAC251699E0581A60FAA82FF24 /* PBKDF1.swift */,
+				9CF5D000F8024A8145DEFD0F4F58A23C /* PBKDF2.swift */,
+				F275ECE3992BF464D863432FC9A6D117 /* PCBC.swift */,
+				0BA4503D1DD846C31DE759191D22BE9A /* PKCS5.swift */,
+				103D2B791790B8CE3327E800971AB23A /* PKCS7.swift */,
+				102FAB3DDC36E067F9BDD3C71F8AE60D /* PKCS7Padding.swift */,
+				B77EC9C26630BD9A71E53B2479E4C337 /* Poly1305.swift */,
+				973FDE8118B1D6055F81F95B4A828142 /* Rabbit.swift */,
+				C2B0B30E71C12B1384C09243AF30FDCB /* Rabbit+Foundation.swift */,
+				AEDB76C61E7A88A14381D6D4F7E6F888 /* RandomAccessBlockModeWorker.swift */,
+				6F0610BFE330A2FC3B1E6CF576EA969A /* RandomAccessCryptor.swift */,
+				DE7DF9C7063368B8C8720EDBFBB0292C /* RandomBytesSequence.swift */,
+				DD4933BE3AD930C433FDFAA494BA08F3 /* SecureBytes.swift */,
+				3B8CF5CC86AABF73F95DFE8BA7EF148A /* SHA1.swift */,
+				9E45B0D85BAC6E87E56FCDA46A6C19D5 /* SHA2.swift */,
+				9EB37A963D40AB5E7390E5EA41EC80E8 /* SHA3.swift */,
+				EBE2D4D1BC2B516E310CBFB157F69D7F /* String+Extension.swift */,
+				736F36B61E4924BD63270B36E910A504 /* String+FoundationExtension.swift */,
+				B1D0A0070CA07982B81FF14A42401DDF /* UInt16+Extension.swift */,
+				BF4F58EA51D3B942E448D3437E8507E1 /* UInt32+Extension.swift */,
+				69D6B69E278F2071884A3F0D81E22310 /* UInt64+Extension.swift */,
+				E609D421A46DE1921D75373F0FA42C71 /* UInt8+Extension.swift */,
+				5B95F92AC8E5E0828138BEC361FDE7CB /* Updatable.swift */,
+				1C775C1C8CCC352D04BA1879CD2172D1 /* Utils.swift */,
+				3778C80E4AC534154FBE39726A3A34FA /* Utils+Foundation.swift */,
+				22D6CEE19603836A3B85DD1767C86EB5 /* ZeroPadding.swift */,
+				AC5BA127542F28980D0A0E8E66FBAA97 /* Support Files */,
+			);
+			name = CryptoSwift;
+			path = CryptoSwift;
+			sourceTree = "<group>";
+		};
+		A62B577B2D8C410E8B08049511EBB575 /* IMEPayQRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				9C5C83CB69321290AC2E942D3A994310 /* BaseViewController.swift */,
+				BE640E8DEC52A3E95E3E0313E669A3A2 /* CryptoManager.swift */,
+				E9470466A9E9E793AEC27961EBDEB71E /* Extensions.swift */,
+				797FE327B962F4C58C94591028CA0A9C /* IMEPayQRScanner.h */,
+				E4A37B98F2A45707B10CD6A5628F04DF /* IMPScannerCoordinator.swift */,
+				A49374EB289098E820B8B0E68605A38D /* OverlayView.swift */,
+				8C6215539AEF74694B64BEF94D48FA16 /* QRCodeScannerViewController.swift */,
+				E81526F45E1CBE477F41425E9CB72096 /* QRModel.swift */,
+				4C2D7AEAFA79EFFE5822B5674F5E2558 /* Resources */,
+				D05FE40A4A3040F8BBA43C09ECD950B2 /* Support Files */,
+			);
+			name = IMEPayQRScanner;
+			path = IMEPayQRScanner;
+			sourceTree = "<group>";
+		};
+		AC5BA127542F28980D0A0E8E66FBAA97 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74D2ADC231B6A4BB4404828396F28697 /* CryptoSwift.modulemap */,
+				2AA5D72A6AA3A5702CF74961B5351096 /* CryptoSwift.xcconfig */,
+				F7F7EDE73015142AC2E05762542D864A /* CryptoSwift-dummy.m */,
+				16311463B4C60C470A8B06637D334218 /* CryptoSwift-prefix.pch */,
+				ABB9E550EB45401A950F6EEBDD1C47AB /* CryptoSwift-umbrella.h */,
+				822B1C0BBCC143F89ECA8949AAF1BEAC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CryptoSwift";
+			sourceTree = "<group>";
+		};
+		D05FE40A4A3040F8BBA43C09ECD950B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AE45C56B11CCE9AECEDEF6B5FD37927 /* IMEPayQRScanner.modulemap */,
+				7BF421A55424B267BEB8FDABB4823F12 /* IMEPayQRScanner.xcconfig */,
+				4A58C773728BBAAA462E90C380AA5ED8 /* IMEPayQRScanner-dummy.m */,
+				4E7C12D358E46C5B779E657C5650568C /* IMEPayQRScanner-prefix.pch */,
+				4F28A18531CFF4A524891C72666C8F45 /* IMEPayQRScanner-umbrella.h */,
+				4BCDC31DCB0CC892B1A9CF5C2B508D22 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IMEPayQRScanner";
+			sourceTree = "<group>";
+		};
+		EF14D6C5E42505B9BC2E6E13E041CEF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38DCE7C7410B1CAA2006F9471592FD4 /* CryptoSwift.framework */,
+				5713ADEDA6D911A0E2E2FC42D7D1BD30 /* IMEPayQRScanner.framework */,
+				85CEB18A3517793C32AA6BA4654AFD10 /* Pods_IMEPayQRScanner.framework */,
+				7DABF636F2DB5C2D4F55DC3D49268215 /* Pods_IMEPayQRScannerTests.framework */,
+				3E7B88434F5E3E61EF293D9A09B66113 /* Pods_ScannerDemo.framework */,
+				6937872E43B402B130E2E80BF7C3D0F5 /* Pods_ScannerDemoTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6066D859083CE3CD5D66AEBA456B4F /* Pods-IMEPayQRScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				43253B06FE4DC3E1C51E97F5216DEA78 /* Info.plist */,
+				1B00FA9F88DEB700E6843B808C99107D /* Pods-IMEPayQRScannerTests.modulemap */,
+				B9B2D37D4599228E847EFD7E8174091E /* Pods-IMEPayQRScannerTests-acknowledgements.markdown */,
+				3C241946B5661D0C39FD52CBA58B31E1 /* Pods-IMEPayQRScannerTests-acknowledgements.plist */,
+				81CF82620C186ECDD75EBBA77FC89475 /* Pods-IMEPayQRScannerTests-dummy.m */,
+				2675D63570CEF0B8B97EF0499387F585 /* Pods-IMEPayQRScannerTests-frameworks.sh */,
+				BA73D60FD7B0651F45F8CBFBDD0D1441 /* Pods-IMEPayQRScannerTests-resources.sh */,
+				F58887F67030ECBBCCDBBDB6FB3F9A8E /* Pods-IMEPayQRScannerTests-umbrella.h */,
+				5BC77A7349899DD95515B8BF0918A980 /* Pods-IMEPayQRScannerTests.debug.xcconfig */,
+				7970E0F0F28B8E479BD6C8BEEE5743A7 /* Pods-IMEPayQRScannerTests.release.xcconfig */,
 			);
 			name = "Pods-IMEPayQRScannerTests";
 			path = "Target Support Files/Pods-IMEPayQRScannerTests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		F794E514E1311EE65F6A2AF329F0CDFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				0262926441FCB087DDF890EEDB255FFD /* CryptoSwift.framework */,
+				9CA4C6696405752CCB3B389AECDE724A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F7BF7C3D0A8C9B2E2A861ED5EDA72961 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4B72307847228024D158496EF8FCCA80 /* CryptoSwift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FC4A0325829BBE34380FCC299E1D8A8A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E7992A0E17886E4E553034DD6D2549A3 /* CryptoSwift.framework */,
-				8B03D64AB45B25977DB060C04CBDED46 /* Pods_IMEPayQRScanner.framework */,
-				6FECFE78AA05C108455B1823DC36219C /* Pods_IMEPayQRScannerTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FD310625CBAD79EE358299C170E20543 /* Pods-IMEPayQRScanner */ = {
-			isa = PBXGroup;
-			children = (
-				0C5FAA471CAC3C2767BD8CBF3AA03826 /* Info.plist */,
-				F2F9D732A876AC54B491F8B76159666A /* Pods-IMEPayQRScanner.modulemap */,
-				8C9857618388B33C80BF5AF0609EB2FA /* Pods-IMEPayQRScanner-acknowledgements.markdown */,
-				2DE03207FE69C4961FB6FC9FF89E2CA1 /* Pods-IMEPayQRScanner-acknowledgements.plist */,
-				CBAF00A68D437D136B6D958CB8472897 /* Pods-IMEPayQRScanner-dummy.m */,
-				268CF3C51C272C160CCD18D689D26AAC /* Pods-IMEPayQRScanner-resources.sh */,
-				FEE21DD43DA885EB5130AFDAE86DC36C /* Pods-IMEPayQRScanner-umbrella.h */,
-				B658E9E122BD5C1AFEEE9DC0F2357CC0 /* Pods-IMEPayQRScanner.debug.xcconfig */,
-				6CC59D75FDB7E7DF823D967F1EB231F9 /* Pods-IMEPayQRScanner.release.xcconfig */,
-			);
-			name = "Pods-IMEPayQRScanner";
-			path = "Target Support Files/Pods-IMEPayQRScanner";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		719371CB700C7BDF2E4B5AE40FD257BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D640F9A6CEEB57B69437404D8F4EC8F /* Pods-ScannerDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4E65F6E96517F13F896F037DC55E321 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +637,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E65BADEC4C4CAB137E49ED2F1EEA818F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB850FA175CCE7E0BA25D0EEECDA649E /* Pods-ScannerDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3436468AE690F002D01D43F2C55B76E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4484CC2AE1D5549EB3155E50E734987 /* IMEPayQRScanner-umbrella.h in Headers */,
+				CAEFC71A93CF694F456A83564C33D141 /* IMEPayQRScanner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -447,7 +673,7 @@
 			);
 			name = "Pods-IMEPayQRScannerTests";
 			productName = "Pods-IMEPayQRScannerTests";
-			productReference = 6FECFE78AA05C108455B1823DC36219C /* Pods_IMEPayQRScannerTests.framework */;
+			productReference = 7DABF636F2DB5C2D4F55DC3D49268215 /* Pods_IMEPayQRScannerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6198980A5A77C789EFCCA22ACF2FA51D /* Pods-IMEPayQRScanner */ = {
@@ -465,7 +691,7 @@
 			);
 			name = "Pods-IMEPayQRScanner";
 			productName = "Pods-IMEPayQRScanner";
-			productReference = 8B03D64AB45B25977DB060C04CBDED46 /* Pods_IMEPayQRScanner.framework */;
+			productReference = 85CEB18A3517793C32AA6BA4654AFD10 /* Pods_IMEPayQRScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6BB1C1403B2419F911818DA8413FDA07 /* CryptoSwift */ = {
@@ -482,7 +708,63 @@
 			);
 			name = CryptoSwift;
 			productName = CryptoSwift;
-			productReference = E7992A0E17886E4E553034DD6D2549A3 /* CryptoSwift.framework */;
+			productReference = E38DCE7C7410B1CAA2006F9471592FD4 /* CryptoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A6494D8C8FAEDF342426257AF5A54C0 /* Pods-ScannerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4538154586056234B0A5160D4D041AE2 /* Build configuration list for PBXNativeTarget "Pods-ScannerDemoTests" */;
+			buildPhases = (
+				882E6602B1CFEAF0BD42B0634549AB66 /* Sources */,
+				5331005D0CEEDE709EACD2A306A7934B /* Frameworks */,
+				E65BADEC4C4CAB137E49ED2F1EEA818F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EE031FC328919C79F06C36AD68980E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-ScannerDemoTests";
+			productName = "Pods-ScannerDemoTests";
+			productReference = 6937872E43B402B130E2E80BF7C3D0F5 /* Pods_ScannerDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6EA707553D6EF4E12A923E78A3A7FB4 /* Pods-ScannerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7039AFBA178C748E2C02B3D52D384B5B /* Build configuration list for PBXNativeTarget "Pods-ScannerDemo" */;
+			buildPhases = (
+				1373AA52CB52DF69E9B34FD35A6DB7AE /* Sources */,
+				BBF00E41693A7312DFC91D1F62B7E8AA /* Frameworks */,
+				719371CB700C7BDF2E4B5AE40FD257BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02225ED74F015370B217AF6D2AF09305 /* PBXTargetDependency */,
+				7B659A76CAFD2D76CF4791B5ED835EAC /* PBXTargetDependency */,
+			);
+			name = "Pods-ScannerDemo";
+			productName = "Pods-ScannerDemo";
+			productReference = 3E7B88434F5E3E61EF293D9A09B66113 /* Pods_ScannerDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA9B79B1B1B891266BEF4C41807FC69A /* IMEPayQRScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D9E19A8667355925D55A0FAAEDC326 /* Build configuration list for PBXNativeTarget "IMEPayQRScanner" */;
+			buildPhases = (
+				12B3CD1498BB3678BF0E415DA0AE8501 /* Sources */,
+				068D50C4EE9A13B1841C4874CCA94650 /* Frameworks */,
+				F3436468AE690F002D01D43F2C55B76E /* Headers */,
+				A4C651E96B15F72DCC96BF7B3255545C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D0BF331769F8DC81FD6F636E809A8E1 /* PBXTargetDependency */,
+			);
+			name = IMEPayQRScanner;
+			productName = IMEPayQRScanner;
+			productReference = 5713ADEDA6D911A0E2E2FC42D7D1BD30 /* IMEPayQRScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -502,23 +784,69 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FC4A0325829BBE34380FCC299E1D8A8A /* Products */;
+			productRefGroup = EF14D6C5E42505B9BC2E6E13E041CEF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6BB1C1403B2419F911818DA8413FDA07 /* CryptoSwift */,
+				EA9B79B1B1B891266BEF4C41807FC69A /* IMEPayQRScanner */,
 				6198980A5A77C789EFCCA22ACF2FA51D /* Pods-IMEPayQRScanner */,
 				3E4C97FF5512DD60D927A3FDF8CAED14 /* Pods-IMEPayQRScannerTests */,
+				D6EA707553D6EF4E12A923E78A3A7FB4 /* Pods-ScannerDemo */,
+				8A6494D8C8FAEDF342426257AF5A54C0 /* Pods-ScannerDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A4C651E96B15F72DCC96BF7B3255545C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A216025A3D3703E01B9B89D463123E12 /* IC_CLOSE@2x.png in Resources */,
+				28ED02C99A15C5A91DCC72212DCB8495 /* Scanner.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		12B3CD1498BB3678BF0E415DA0AE8501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDF5930431BFAFABD3F50D1C2E28B63 /* BaseViewController.swift in Sources */,
+				7D19CB292A3A294C446D7CB1C9F4E72E /* CryptoManager.swift in Sources */,
+				9F4D524CADB81196102066433C5F6222 /* Extensions.swift in Sources */,
+				28A4701B98A60D931981D3EF697688C3 /* IMEPayQRScanner-dummy.m in Sources */,
+				F655D057FC51EC0FC778B37442D009E5 /* IMPScannerCoordinator.swift in Sources */,
+				6F8A0D50BEDB3DFE1237D4DB40249FD3 /* OverlayView.swift in Sources */,
+				50EFBCFA2F129D00137F42C06423A6E4 /* QRCodeScannerViewController.swift in Sources */,
+				143FD0BD9911520159DE6980DB01621B /* QRModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373AA52CB52DF69E9B34FD35A6DB7AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E6CB8BC112C7890E257643ABCC3C87 /* Pods-ScannerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E0A68EAB8CC716D714C15ADDDF3714B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EE057CB48DB143E7FE012D50E061FB78 /* Pods-IMEPayQRScannerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882E6602B1CFEAF0BD42B0634549AB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D81F0A62AE650F954E2419B5B4937F7 /* Pods-ScannerDemoTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +931,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		02225ED74F015370B217AF6D2AF09305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 6BB1C1403B2419F911818DA8413FDA07 /* CryptoSwift */;
+			targetProxy = 3DC83EB7A36BEB998DD3485C0ECA6395 /* PBXContainerItemProxy */;
+		};
 		36112C4AFB03C5E3DDC17331F4FC54F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CryptoSwift;
@@ -615,6 +949,24 @@
 			target = 6198980A5A77C789EFCCA22ACF2FA51D /* Pods-IMEPayQRScanner */;
 			targetProxy = 53B8FB910EC06EB2324A6E3995B753E0 /* PBXContainerItemProxy */;
 		};
+		7B659A76CAFD2D76CF4791B5ED835EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IMEPayQRScanner;
+			target = EA9B79B1B1B891266BEF4C41807FC69A /* IMEPayQRScanner */;
+			targetProxy = 3A386F1717E0148FB4C975D262E349F4 /* PBXContainerItemProxy */;
+		};
+		7EE031FC328919C79F06C36AD68980E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ScannerDemo";
+			target = D6EA707553D6EF4E12A923E78A3A7FB4 /* Pods-ScannerDemo */;
+			targetProxy = D829ED80D584D75E80CBAEFF73F47B28 /* PBXContainerItemProxy */;
+		};
+		8D0BF331769F8DC81FD6F636E809A8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 6BB1C1403B2419F911818DA8413FDA07 /* CryptoSwift */;
+			targetProxy = B258566BE34989E4002B9F43252CEBAF /* PBXContainerItemProxy */;
+		};
 		F59CE1BF0B5F1D9C5CE98C9A5184D2D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CryptoSwift;
@@ -624,9 +976,85 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02E4B14EA6A1657E456C54CE6760E4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF421A55424B267BEB8FDABB4823F12 /* IMEPayQRScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IMEPayQRScanner/IMEPayQRScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IMEPayQRScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IMEPayQRScanner/IMEPayQRScanner.modulemap";
+				PRODUCT_MODULE_NAME = IMEPayQRScanner;
+				PRODUCT_NAME = IMEPayQRScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0592452A0E95B51D9990CC067EB698E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427BCCDB54E32BC6517C42A2FF54966C /* Pods-ScannerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScannerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScannerDemo/Pods-ScannerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		144D7E51AB827BDF52B5F9A7BD686289 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40642700584A629264830D2D5DC0033F /* CryptoSwift.xcconfig */;
+			baseConfigurationReference = 2AA5D72A6AA3A5702CF74961B5351096 /* CryptoSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -662,7 +1090,7 @@
 		};
 		17064DAD236A10F77C4BF65BDAC39C46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E231D7BF23222EBCF5D9DF19FE801FF0 /* Pods-IMEPayQRScannerTests.release.xcconfig */;
+			baseConfigurationReference = 7970E0F0F28B8E479BD6C8BEEE5743A7 /* Pods-IMEPayQRScannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -702,7 +1130,7 @@
 		};
 		3141CD071C279BC3D2F6AE04E988BBF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A216C6DEBB43A4F984DEDFB600A76D9 /* Pods-IMEPayQRScannerTests.debug.xcconfig */;
+			baseConfigurationReference = 5BC77A7349899DD95515B8BF0918A980 /* Pods-IMEPayQRScannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -742,7 +1170,7 @@
 		};
 		33696E2905A1ABDE2EE47CF5F4317458 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B658E9E122BD5C1AFEEE9DC0F2357CC0 /* Pods-IMEPayQRScanner.debug.xcconfig */;
+			baseConfigurationReference = FC55123B15AC69869652B822A8A6FBA5 /* Pods-IMEPayQRScanner.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -780,9 +1208,47 @@
 			};
 			name = Debug;
 		};
+		40C3975C5CF93816704F0091216E6144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108FC390FB950785F5470774AF7299EA /* Pods-ScannerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScannerDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScannerDemoTests/Pods-ScannerDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4798346ADAF925A7F19C364453C3568A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CC59D75FDB7E7DF823D967F1EB231F9 /* Pods-IMEPayQRScanner.release.xcconfig */;
+			baseConfigurationReference = CBC5B018D84036220CFB377C1F4AC4B9 /* Pods-IMEPayQRScanner.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -883,6 +1349,82 @@
 			};
 			name = Debug;
 		};
+		67173B0C8EDFBA2B108C8E6F7307B01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D00989BC897E60CD272AE756138E0AC /* Pods-ScannerDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScannerDemoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScannerDemoTests/Pods-ScannerDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7DF7D7E13E2A62B9F4C9E4BC9FE6D086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF421A55424B267BEB8FDABB4823F12 /* IMEPayQRScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IMEPayQRScanner/IMEPayQRScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IMEPayQRScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IMEPayQRScanner/IMEPayQRScanner.modulemap";
+				PRODUCT_MODULE_NAME = IMEPayQRScanner;
+				PRODUCT_NAME = IMEPayQRScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.1.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -943,7 +1485,7 @@
 		};
 		CC144B1423DF4BE6A3B2E40B37F08D4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40642700584A629264830D2D5DC0033F /* CryptoSwift.xcconfig */;
+			baseConfigurationReference = 2AA5D72A6AA3A5702CF74961B5351096 /* CryptoSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -978,6 +1520,46 @@
 			};
 			name = Release;
 		};
+		E99B93FA96B32C2C50609A4F18258047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3001DE03CF977DF13179C1F6DEB9CD3F /* Pods-ScannerDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScannerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScannerDemo/Pods-ScannerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1008,11 +1590,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4538154586056234B0A5160D4D041AE2 /* Build configuration list for PBXNativeTarget "Pods-ScannerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C3975C5CF93816704F0091216E6144 /* Debug */,
+				67173B0C8EDFBA2B108C8E6F7307B01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4F2D4DEFD9716C954D1E8ADC5D5601A5 /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				144D7E51AB827BDF52B5F9A7BD686289 /* Debug */,
 				CC144B1423DF4BE6A3B2E40B37F08D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7039AFBA178C748E2C02B3D52D384B5B /* Build configuration list for PBXNativeTarget "Pods-ScannerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99B93FA96B32C2C50609A4F18258047 /* Debug */,
+				0592452A0E95B51D9990CC067EB698E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D9E19A8667355925D55A0FAAEDC326 /* Build configuration list for PBXNativeTarget "IMEPayQRScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02E4B14EA6A1657E456C54CE6760E4C3 /* Debug */,
+				7DF7D7E13E2A62B9F4C9E4BC9FE6D086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
