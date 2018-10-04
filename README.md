@@ -19,7 +19,7 @@ Scan QR Code issued by IME Pay to its merchants.
 
 ## Installation
 
-### Installation
+### Cocoapods
 
 To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:
 
