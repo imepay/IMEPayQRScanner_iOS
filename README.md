@@ -15,29 +15,28 @@ Scan QR Code issued by IME Pay to its merchants.
 
 ### Requirements
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* iOS 8+
 
 ### Installation
 
-A step by step series of examples that tell you how to get a development env running
+To integrate Alamofire into your Xcode project using CocoaPods, specify it in your Podfile:
 
 Say what the step will be
 
 ```
-Give the example
+platform :ios, '11.4'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'IMEPayQRScanner'
+end
 ```
 
-And repeat
+Then, run the following command:
 
 ```
-until finished
+$ pod install
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Usage
 
