@@ -71,4 +71,4 @@ coordinator.start()
 
 ## License
 
-Alamofire is released under the MIT license. [See LICENSE](https://github.com/imepay/IMEPayQRScanner_iOS/blob/master/LICENSE) for details.
+IMEPayQRScanner is released under the MIT license. [See LICENSE](https://github.com/imepay/IMEPayQRScanner_iOS/blob/master/LICENSE) for details.
